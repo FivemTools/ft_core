@@ -971,6 +971,15 @@ class Vehicle extends Entity {
     }
 
     /**
+     * @description Get the ped on the seat
+     * @param {Number} seat 
+     * @returns {Ped}
+     */
+    GetPedOnSeat(seat){
+        return new Ped(GetPedInVehicleSeat(this.id, seat))
+    }
+
+    /**
      * @description Spawn
      * @param {function} callback
      * @param {boolean} isNetwork

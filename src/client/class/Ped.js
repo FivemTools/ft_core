@@ -13,32 +13,155 @@
 class Ped extends Entity {
 
     /**
-     * @description Get ped id for player id
-     * @param {number} playerId
-     * @return {void}
+     * @description Get how much money this ped is carrying 
+     * @returns {Number}
      */
-    GetPlayer(playerId) {
-        this.id = GetPlayerPed(playerId);
+    get money() {
+        return GetPedMoney(this.id);
     }
 
     /**
-     * @description Set default component variation
-     * @return {void}
-     */
-    SetDefaultComponentVariation() {
-        SetPedDefaultComponentVariation(this.id);
+    * @description Set how much money this ped is carrying 
+    * @param {Number}
+    */
+    set money(value) {
+        SetPedMoney(this.id, value);
     }
 
     /**
-     * @description Set component variation on a ped
-     * @param {number} componentId
-     * @param {number} drawableId
-     * @param {number} textureId
-     * @return {void}
-     */
-    SetComponentVariation(componentId, drawableId, textureId) {
-        SetPedComponentVariation(this.id, componentId, drawableId, textureId, 0);
+    * @description Get the gender of this ped
+    * @returns {Number} 0 => Male, 1 => Female
+    */
+    get gender() {
+        return IsPedMale(this.id) ? 0 : 1;;
     }
+
+    /**
+    * @description Gets a value indicating whether this  is human
+    * @returns {Boolean}
+    */
+    get isHuman() {
+        return IsPedHuman(this.id);
+    }
+
+    /**
+    * @description Set this ped as enemy
+    * @returns {Boolean}
+    */
+    set isEnnemy(value) {
+        return SetPedAsEnemy(this.id, value)
+    }
+
+    /**
+        * @description Gets a value indicating whether this  is player
+        * @returns {Boolean}
+        */
+    get isPlayer() {
+        return IsPedAPlayer(this.id);
+    }
+
+    /**
+     * @description Get how much armor of this ped
+     * @returns {Number}
+     */
+    get armor() {
+        return GetPedArmour(this.id);
+    }
+
+    /**
+     * @description Set how much armor this ped have 
+     * @param {Number} value between 0 and 100
+     */
+    set armor(value) {
+        SetPedArmour(this.id, value);
+    }
+
+    /**
+     * @description Gets how accurate this ped shooting ability is.
+     * @returns {Number} The accuracy from 0 to 100, 0 being very innacurate, 100 being perfectly accurate.
+     */
+    get accuracy() {
+        return GetPedAccuracy(this.id);
+    }
+
+    /**
+    * @description Set how accurate this ped shooting ability is.
+    * @param {Number}  value The accuracy from 0 to 100, 0 being very innacurate, 100 being perfectly accurate.
+    */
+    set accuracy(value) {
+        SetPedAccuracy(this.id, value);
+    }
+
+    /**
+    * @description sets the how much sweat should be rendered on this
+    * @param {Number} value The sweat from 0 to 100, 0 being no sweat, 100 being saturated.
+    */
+    set sweat(value) {
+        if (value < 0) {
+            value = 0;
+        }
+        if (value > 100) {
+            value = 100;
+        }
+        SetPedSweat(this.id, value);
+    }
+
+    /**
+   * @description Sets how high up on this ped body water should be visible.
+   * @param {Number} value The height ranges from 0.0 to 1.99, 0.0 being no water visible, 1.99 being covered in water.
+   */
+    set wetnessHeight(value) {
+        if (value === 0) {
+            ClearPedWetness(this.id);
+        } else {
+            SetPedWetnessHeight(this.id, value);
+        }
+    }
+
+    /**
+       * @description Sets the voice to use when this ped speaks.
+       * @param {String}
+       */
+    set voice(value) {
+        SetAmbientVoiceName(this.id, value);
+    }
+
+
+    /**
+      * @description Sets the rate this ped will shoot at.
+      * @param {Number} value The shoot rate from 0.0 to 1000.0, 100.0 is the default value.
+      */
+    set shootRate(value) {
+        SetPedShootRate(this.id, value);
+    }
+
+    /**
+       * @descriptionGets a value indicating whether this ped was killed by a stealth attack.
+       * @param {Boolean}
+       */
+    get wasKilledByStealh() {
+        return WasPedKilledByStealth(this.id);
+    }
+
+    /**
+    * @descriptionGets a value indicating whether this ped  was killed by a takedown.
+    * @param {Boolean}
+    */
+    get wasKilledByTakedown() {
+        return WasPedKilledByTakedown(this.id);
+    }
+
+   /**
+    * @description Get the style for customization of this ped
+    * @returns {Style}
+    */
+   get style(){
+       if(this._style === null){
+            this._style = new Style(this);
+       }
+       return this._style
+   }
+
 
     /**
      * @description Get if ped play anim
@@ -261,6 +384,48 @@ class Ped extends Entity {
         SetPedIntoVehicle(this.id, vehicle.id, seat);
     }
 
+
+    /**
+     * @description Get the VehicleSeat of this Ped is in;
+     * @return {VehicleSeat}
+     */
+    get seatIndex() {
+        if (!this.IsInVehicle()) {
+            return VehicleSeat.None
+        }
+        for (seatIndexs = -1; seatIndexs < GetVehicleModelNumberOfSeats(Game.GenerateHash(this.CurrentVehicle.model)); seatIndexs++) {
+            if (this.CurrentVehicle.GetPedOnSeat(seatIndexs).id === this.id) {
+                return VehicleSeat[seatIndexs]
+            }
+        }
+        return VehicleSeat.None
+    }
+
+    /**
+     * @description Gets a value indicating whether this ped is jumping out of their vehicle.
+     * @returns {Boolean}
+     */
+    get isJumpingOutOfVehicle() {
+        return IsPedJumpingOutOfVehicle(this.id)
+    }
+
+
+    /**
+     * @description ets a value indicating whether this Ped will stay in the vehicle when the driver gets jacked.
+     * @param {Boolean}
+     */
+    set staysInVehicleWhenJacked(value) {
+        SetPedStayInVehicleWhenJacked(this.id, value);
+    }
+
+    /**
+     * @description Sets the maximum driving speed this Ped can drive at.
+     * @param {Number}
+     */
+    set maxDrivingSpeed(value) {
+        SetDriveTaskMaxCruiseSpeed(this.id, value);
+    }
+
     /**
      * @description
      * @return {void}
@@ -431,6 +596,13 @@ class Ped extends Entity {
      */
     set CanRagdoll(value) {
         SetPedCanRagdoll(this.id, value);
+    }
+
+    /**
+     * @description cancel the ragdoll
+     */
+    CancelRagdoll() {
+        SetPedToRagdoll(this.id, 1, 1, 1, false, false, false)
     }
 
     /**
