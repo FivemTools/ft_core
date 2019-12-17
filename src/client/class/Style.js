@@ -1,73 +1,198 @@
-const PedComponents = new Enum([
-    "Face",
-    "Head",
-    "Hair",
-    "Torso",
-    "Legs",
-    "Hands",
-    "Shoes",
-    "Special1",
-    "Special2",
-    "Special3",
-    "Textures",
-    "Torso2"
-]);
-
-const PedProps = new Enum([
-    "Hats",
-    "Glasses",
-    "EarPieces",
-    "Unknown3",
-    "Unknown4",
-    "Unknown5",
-    "Watches",
-    "Wristbands",
-    "Unknown8",
-    "Unknown9",
-])
-
 class Style {
     constructor(ped) {
         this._ped = ped
+        if (ped.id) { this.GetHeadData() }
     }
 
     _mother = 0;
     _father = 0;
     _skin = 0;
-    _face = 0;
+    _shape = 0;
     _pedComponents = {};
     _pedProps = {};
+
     /**
     * @descriptionGets Set mother for ressemblance
     * @param {Number}
     */
     set mother(value) {
-        this.this._mother = value;
-        SetPedHeadBlendData(this._ped.id, this.this._father, this.this._mother, null, this.this._father, this.this._mother, null, this.this._face, this.this._skin, null, true);
+        this._mother = value;
+        SetPedHeadBlendData(this._ped.id, this._father, this._mother, null, this._father, this._mother, null, this._shape, this._skin, null, true);
     }
+
+    get mother() {
+        return this._mother
+    }
+
     /**
     * @descriptionGets Set father for ressemblance
     * @param {Number}
     */
     set father(value) {
-        this.this._father = value;
-        SetPedHeadBlendData(this._ped.id, this.this._father, this.this._mother, null, this.this._father, this.this._mother, null, this.this._face, this.this._skin, null, true);
+        this._father = value;
+        SetPedHeadBlendData(this._ped.id, this._father, this._mother, null, this._father, this._mother, null, this._shape, this._skin, null, true);
     }
+
+    get father() {
+        return this._father
+    }
+
     /**
-    * @descriptionGets Set face for ressemblance
+    * @descriptionGets "Select how much of your head shape should be inherited from your father or mother. All the way on 0.0 is your dad, all the way on 1.0 is your mom."
     * @param {Number}
     */
-    set face(value) {
-        this.this._face = value;
-        SetPedHeadBlendData(this._ped.id, this.this._father, this.this._mother, null, this.this._father, this.this._mother, null, this.this._face, this.this._skin, null, true);
+    set shape(value) {
+        this._shape = value;
+        SetPedHeadBlendData(this._ped.id, this._father, this._mother, null, this._father, this._mother, null, this._shape, this._skin, null, true);
     }
+
+    get shape() {
+        return this._shape
+    }
+
     /**
-    * @descriptionGets Set skin for ressemblance
+    * @descriptionGets "Select how much of your body skin tone should be inherited from your father or mother. All the way on 0.0 is your dad, all the way on 1.0 is your mom."
     * @param {Number}
     */
     set skin(value) {
-        this.this._skin = value;
-        SetPedHeadBlendData(this._ped.id, this.this._father, this.this._mother, null, this.this._father, this.this._mother, null, this.this._face, this.this._skin, null, true);
+        this._skin = value;
+        SetPedHeadBlendData(this._ped.id, this._father, this._mother, null, this._father, this._mother, null, this._shape, this._skin, null, true);
+    }
+    get sking() {
+        return this._skin
+    }
+
+    /**
+     * @description Get the head Data
+     * @returns {Object}
+     */
+    GetHeadData() {
+        var int = new Uint32Array(new ArrayBuffer(10 * 8));
+        Citizen.invokeNative("0x2746BD9D88C5C5D0", ped.id, int);
+        const buffer = int.buffer;
+        this._father = int[0];
+        this._mother = int[2];
+        this._shape = new Float32Array(buffer, 48, 1)[0];
+        this._skin = new Float32Array(buffer, 56, 1)[0];
+        return { mother: this._mother, father: this._father, shape: this._shape, skin: this._skin }
+    }
+
+    /**
+     * @description Sets the various face features
+     * @param {FaceEnum}
+     * @param {Number} value Range between -1 and 1
+     */
+    Setface(index, value) {
+        SetPedFaceFeature(this._ped.id, index, value);
+    }
+
+    /**
+     * @description Get the various face features
+     * @param {FaceEnum} index 
+     * @returns {Number} Returns ped's face feature value, or 0.0 if fails to get.
+     */
+    GetFace(index) {
+        return GetPedFaceFeature(this._ped.id, index);
+    }
+
+    /**
+     * @description Set the head appearance (Eyes,beard...)
+     * @param {HeadAppearanceEnum}
+     * @param {Number} value
+     * @param {Number} opacity between 0.0 and 1.0
+     */
+    SetHeadAppearance(index, value, opacity) {
+        SetPedHeadOverlay(this._ped.id, index, value, opacity);
+    }
+
+    /**
+     * @description Set the head appearance Color
+     * @param {HeadAppearanceEnum} index 
+     * @param {Number} color 
+     */
+    SetHeadAppearanceColor(index, color) {
+        var colorType = 0
+        switch (index) {
+            case 1:
+            case 2:
+            case 10:
+                colorType = 1;
+                break;
+            case 5:
+            case 8:
+                colorType = 2;
+                break;
+            default:
+                break;
+        }
+        SetPedHeadOverlayColor(this._ped.id, index, colorType, color, 0);
+    }
+
+    /**
+     * @description Get the head Appearance details
+     * @param {HeadAppearanceEnum} index 
+     * @returns {Object}
+     */
+    GetHeadAppearance(index) {
+        const data = GetPedHeadOverlayData(this._ped.id, index);
+        return { index: index, value: data[1], opacity: data[5], colorType: data[2], color: data[3] };
+    }
+
+    /**
+     * @description Set the Eyes color
+     * @param {Number}
+     */
+    set eyeColor(value) {
+        SetPedEyeColor(this._ped.id, value);
+    }
+
+    /**
+     * @description Get the Eyes Color
+     * @returns {Number}
+     */
+    get eyeColor() {
+        return GetPedEyeColor(this._ped.id);
+    }
+
+    /**
+     * @description Set the hair color
+     * @param {Number}
+     */
+    set hairColor(color) {
+        SetPedHairColor(this._ped.id, color, 0);
+    }
+
+    /**
+     * @description Get the hair Color
+     * @returns {Number}
+     */
+    get hairColor() {
+        GetPedHairColor(this._ped.id)
+    }
+
+    /**
+     * @description small function to setup type and color
+     * @param {Number} type 
+     * @param {Number} color 
+     */
+    SetHair(type,color){
+        if(type){
+            this.PedComponent(2).index = type;
+        }
+        if(color){
+            SetPedHairColor(this._ped.id, color, 0);
+        }
+    }
+
+    /**
+     * @description small function to get type and color
+     * @returns {Object} 
+     */
+    GetHair(){
+        return {
+            type: this.PedComponent(2).index,
+            color: GetPedHairColor(this._ped.id)
+        }
     }
 
     /**
@@ -90,11 +215,11 @@ class Style {
      * @param {PedProps}
      * @returns {PedProp} an interface for the prop
      */
-    PedProp(propId){
-        if(this._pedProps[propId]){
+    PedProp(propId) {
+        if (this._pedProps[propId]) {
             return this._pedProps[propId];
-        }else{
-            let variation = new PedProp(this._ped,propId);
+        } else {
+            let variation = new PedProp(this._ped, propId);
             this._pedProps[propId] = variation;
             return variation;
         }
@@ -104,12 +229,12 @@ class Style {
      * @description Get all Components valid for the ped
      * @returns {Array}
      */
-    GetAllComponents(){
+    GetAllComponents() {
         let component = [];
-        Object.values(PedComponents).forEach((e)=>{
-            if(typeof e === "number"){
+        Object.values(PedComponents).forEach((e) => {
+            if (typeof e === "number") {
                 let cpm = this.PedComponent(e);
-                if(cpm.HasAnyVariations){
+                if (cpm.HasAnyVariations) {
                     component.push(cpm);
                 }
             }
@@ -121,12 +246,12 @@ class Style {
      * @description Get all props valid for the ped
      * @returns {Array}
      */
-    GetAllProps(){
+    GetAllProps() {
         let prop = [];
-        Object.value(PedProps).forEach((e)=>{
-            if(typeof e === "number"){
+        Object.value(PedProps).forEach((e) => {
+            if (typeof e === "number") {
                 let prs = this.PedProp(e);
-                if(prs.HasAnyVariations){
+                if (prs.HasAnyVariations) {
                     prop.push(prs);
                 }
             }
@@ -138,31 +263,31 @@ class Style {
      * @description Get all props AND components valid for the ped
      * @returns {Array}
      */
-    GetAllVariations(){
+    GetAllVariations() {
         let variation = [];
-        Array.prototype.push.apply(variation,this.GetAllComponents());
-        Array.prototype.push.apply(variation,this.GetAllProps());
+        Array.prototype.push.apply(variation, this.GetAllComponents());
+        Array.prototype.push.apply(variation, this.GetAllProps());
         return variation;
     }
 
     /**
      * @description randomize Outfit for the ped
      */
-    RandomizeOutfit(){
+    RandomizeOutfit() {
         SetPedRandomComponentVariation(this._ped.id, false);
     }
 
     /**
      * @description randomize prop for the ped
      */
-    RandomizeProps(){
+    RandomizeProps() {
         SetPedRandomProps(this._ped.id);
     }
 
     /**
      * @description clear all props
      */
-    ClearProps(){
+    ClearProps() {
         ClearAllPedProps(this._ped.id);
     }
 
@@ -172,6 +297,22 @@ class Style {
      */
     SetDefaultComponentVariation() {
         SetPedDefaultComponentVariation(this._ped.id);
+    }
+
+    /**
+     * @description Clean all tattoos of the ped
+     */
+    ClearTattoos(){
+        ClearPedDecorations(this._ped.id);
+    }
+
+    /**
+     * @description Add Tattoo to the ped
+     * @param {String} collection 
+     * @param {String} name 
+     */
+    AddTattos(collection,name){
+        AddPedDecorationFromHashes(this._ped.id,Game.GenerateHash(collection),Game.GenerateHash(name));
     }
 }
 
@@ -240,7 +381,7 @@ class PedComponent {
      */
     SetVariation(index, textureIndex = 0) {
         if (this.IsVariationValid(index, textureIndex)) {
-            SetPedComponentVariation(this._ped.id, this._componentId, index, textureIndex, 0);
+            SetPedComponentVariation(this._ped.id, this._componentId, index, textureIndex, 2);
             return true
         }
         return false
@@ -254,13 +395,13 @@ class PedComponent {
         return IsPedComponentVariationValid(this._ped.id, this._componentId, index, textureIndex);
     }
 
-    get hasVariations(){
+    get hasVariations() {
         return this.count > 1;
     }
-    get hasTextureVariation(){
+    get hasTextureVariation() {
         return this.count > 1 && this.textureCount > 1;
     }
-    get HasAnyVariations(){
+    get HasAnyVariations() {
         return this.hasVariations || this.hasTextureVariation;
     }
 }
@@ -355,13 +496,13 @@ class PedProp {
         return IsPedPropValid(this._ped.id, this._propId, index - 1, textureIndex);
     }
 
-    get hasVariations(){
+    get hasVariations() {
         return this.count > 1;
     }
-    get hasTextureVariation(){
+    get hasTextureVariation() {
         return this.count > 1 && this.textureCount > 1;
     }
-    get HasAnyVariations(){
+    get HasAnyVariations() {
         return this.hasVariations || this.hasTextureVariation;
     }
 }

@@ -13,6 +13,26 @@
 class Ped extends Entity {
 
     /**
+     * @description Set the model on the ped
+     * @param {String} model
+     */
+    ChangeModel(model){
+        this.SetModelByName(model);
+        new Promise((resolve,reject)=>{
+            RequestModel(this.model);
+            const tmo = setTimeout(()=>{
+                if(HasModelLoaded(this.model)){
+                    clearTimeout(tmo);
+                    resolve()
+                }
+            },10);
+        }).then(()=>{
+            SetPlayerModel(this.id,this.model);
+        });
+    }
+
+
+    /**
      * @description Get how much money this ped is carrying 
      * @returns {Number}
      */
