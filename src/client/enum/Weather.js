@@ -1,0 +1,18 @@
+const Weather = new Enum({
+   "Unknown" :-1,
+    "ExtraSunny":'EXTRASUNNY',
+    "Clear":'CLEAR',
+    "Clouds":'CLOUDS',
+    "Smog":'SMOG',
+    "Foggy":'FOGGY',
+    "Overcast":'OVERCAST',
+    "Raining":'RAIN',
+    "ThunderStorm":'THUNDER',
+    "Clearing":'CLEARING',
+    "Neutral":'NEUTRAL',
+    "Snowing": 'SNOW',
+    "Blizzard":'BLIZZARD',
+    "Snowlight":'SNOWLIGHT',
+    "Christmas": 'XMAS',
+    "Halloween": "HALLOWEEN",
+})
