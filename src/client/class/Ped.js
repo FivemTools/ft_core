@@ -37,7 +37,16 @@ class Ped extends Entity {
      * @return {void}
      */
     SetComponentVariation(componentId, drawableId, textureId) {
-        SetPedComponentVariation(this.id, componentId, drawableId, textureId, 0);
+        SetPedComponentVariation(this.id, componentId, drawableId, textureId, this.GetPaletteVariation(componentId));
+    }
+    
+    /**
+     * @description Get the palette Variation on a component
+     * @param {number} componentId
+     * @return {number} between 0-3
+     */
+    GetPaletteVariation(componentId){
+        return GetPedPaletteVariation(this.id, componentId)
     }
 
     /**
