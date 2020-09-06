@@ -415,7 +415,7 @@ class Vehicle extends Entity {
      */
     get primaryColour() {
         const color = GetVehicleCustomPrimaryColour(this.id);
-        this._primaryColour = {red: color[0], green: color[1], blue: color[2]};
+        this._primaryColour = { red: color[0], green: color[1], blue: color[2] };
         return this._primaryColour;
     }
 
@@ -437,7 +437,7 @@ class Vehicle extends Entity {
      */
     get secondaryColour() {
         const colour = GetVehicleCustomSecondaryColour(this.id);
-        this._secondaryColour = {red: colour[0], green: colour[1], blue: colour[2]};
+        this._secondaryColour = { red: colour[0], green: colour[1], blue: colour[2] };
         return this._secondaryColour;
     }
 
@@ -1078,5 +1078,4 @@ class Vehicle extends Entity {
             callback(false);
         }
     }
-
 }
