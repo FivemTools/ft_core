@@ -31,11 +31,9 @@
     
   <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#client-class">client/class</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/client/class/Audio.js~Audio.html">Audio</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/client/class/Blip.js~Blip.html">Blip</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/client/class/Entity.js~Entity.html">Entity</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/client/class/Game.js~Game.html">Game</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/client/class/Ped.js~Ped.html">Ped</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/client/class/Player.js~Player.html">Player</a></span></span></li>
-<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/client/class/Vehicle.js~Vehicle.html">Vehicle</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/client/class/World.js~World.html">World</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-_MarkerList">_MarkerList</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#client-enum">client/enum</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-AudioFlag">AudioFlag</a></span></span></li>
@@ -58,6 +56,8 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-_onSpawn">_onSpawn</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-_OnSessionStartedTimer">_OnSessionStartedTimer</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-_onSessionStarted">_onSessionStarted</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-class">common/class</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/common/class/Entity.js~Entity.html">Entity</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/common/class/Vehicle.js~Vehicle.html">Vehicle</a></span></span></li>
 <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-utils">common/utils</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/common/utils/Color.js~Color.html">Color</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/common/utils/Vector3.js~Vector3.html">Vector3</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Enum">Enum</a></span></span></li>
@@ -82,7 +82,7 @@
 
   
   
-  <div class="flat-list" data-ice="extendsChain"><h4>Extends:</h4><div><span><a href="class/src/client/class/Entity.js~Entity.html">Entity</a></span> &#x2192; Ped</div></div>
+  <div class="flat-list" data-ice="extendsChain"><h4>Extends:</h4><div><span><a href="class/src/common/class/Entity.js~Entity.html">Entity</a></span> &#x2192; Ped</div></div>
   <div class="flat-list" data-ice="directSubclass"><h4>Direct Subclass:</h4><div><span><a href="class/src/client/class/Player.js~Player.html">Player</a></span></div></div>
   
   
@@ -476,7 +476,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/client/class/Ped.js~Ped.html#instance-method-CurrentVehicle">CurrentVehicle</a></span></span><span class="code" data-ice="signature">(): <span><a href="class/src/client/class/Vehicle.js~Vehicle.html">Vehicle</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/client/class/Ped.js~Ped.html#instance-method-CurrentVehicle">CurrentVehicle</a></span></span><span class="code" data-ice="signature">(): <span><a href="class/src/common/class/Vehicle.js~Vehicle.html">Vehicle</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
         </p>
       </div>
       <div>
@@ -756,7 +756,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/client/class/Ped.js~Ped.html#instance-method-IsInVehicle">IsInVehicle</a></span></span><span class="code" data-ice="signature">(vehicle: <span><a href="class/src/client/class/Vehicle.js~Vehicle.html">Vehicle</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/client/class/Ped.js~Ped.html#instance-method-IsInVehicle">IsInVehicle</a></span></span><span class="code" data-ice="signature">(vehicle: <span><a href="class/src/common/class/Vehicle.js~Vehicle.html">Vehicle</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
         </p>
       </div>
       <div>
@@ -840,7 +840,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/client/class/Ped.js~Ped.html#instance-method-IsSittingInVehicle">IsSittingInVehicle</a></span></span><span class="code" data-ice="signature">(vehicle: <span><a href="class/src/client/class/Vehicle.js~Vehicle.html">Vehicle</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/client/class/Ped.js~Ped.html#instance-method-IsSittingInVehicle">IsSittingInVehicle</a></span></span><span class="code" data-ice="signature">(vehicle: <span><a href="class/src/common/class/Vehicle.js~Vehicle.html">Vehicle</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
         </p>
       </div>
       <div>
@@ -896,7 +896,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/client/class/Ped.js~Ped.html#instance-method-LastVehicle">LastVehicle</a></span></span><span class="code" data-ice="signature">(): <span><a href="class/src/client/class/Vehicle.js~Vehicle.html">Vehicle</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/client/class/Ped.js~Ped.html#instance-method-LastVehicle">LastVehicle</a></span></span><span class="code" data-ice="signature">(): <span><a href="class/src/common/class/Vehicle.js~Vehicle.html">Vehicle</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
         </p>
       </div>
       <div>
@@ -1316,7 +1316,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/client/class/Ped.js~Ped.html#instance-method-SetIntoVehicle">SetIntoVehicle</a></span></span><span class="code" data-ice="signature">(vehicle: <span><a href="class/src/client/class/Vehicle.js~Vehicle.html">Vehicle</a></span>, seat: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>): <span>void</span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/client/class/Ped.js~Ped.html#instance-method-SetIntoVehicle">SetIntoVehicle</a></span></span><span class="code" data-ice="signature">(vehicle: <span><a href="class/src/common/class/Vehicle.js~Vehicle.html">Vehicle</a></span>, seat: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>): <span>void</span></span>
         </p>
       </div>
       <div>
@@ -1428,7 +1428,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/client/class/Ped.js~Ped.html#instance-method-VehicleTryingToEnter">VehicleTryingToEnter</a></span></span><span class="code" data-ice="signature">(): <span><a href="class/src/client/class/Vehicle.js~Vehicle.html">Vehicle</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/client/class/Ped.js~Ped.html#instance-method-VehicleTryingToEnter">VehicleTryingToEnter</a></span></span><span class="code" data-ice="signature">(): <span><a href="class/src/common/class/Vehicle.js~Vehicle.html">Vehicle</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
         </p>
       </div>
       <div>
@@ -1447,7 +1447,7 @@
 </div>
 
 <div class="inherited-summary" data-ice="inheritedSummary"><h2>Inherited Summary</h2><table class="summary" data-ice="summary">
-  <thead><tr><td data-ice="title" colspan="3"><span class="toggle closed"></span> From class <span><a href="class/src/client/class/Entity.js~Entity.html">Entity</a></span></td></tr></thead>
+  <thead><tr><td data-ice="title" colspan="3"><span class="toggle closed"></span> From class <span><a href="class/src/common/class/Entity.js~Entity.html">Entity</a></span></td></tr></thead>
   <tbody>
   
   <tr data-ice="target">
@@ -1464,7 +1464,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/client/class/Entity.js~Entity.html#instance-get-collision">collision</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span>: <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/common/class/Entity.js~Entity.html#instance-get-collision">collision</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span>: <span>*</span></span>
         </p>
       </div>
       <div>
@@ -1492,7 +1492,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/client/class/Entity.js~Entity.html#instance-set-collision">collision</a></span></span><span class="code" data-ice="signature">(status: <span>*</span>): <span>void</span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/common/class/Entity.js~Entity.html#instance-set-collision">collision</a></span></span><span class="code" data-ice="signature">(status: <span>*</span>): <span>void</span></span>
         </p>
       </div>
       <div>
@@ -1520,7 +1520,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/client/class/Entity.js~Entity.html#instance-get-coords">coords</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></span>: <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/common/class/Entity.js~Entity.html#instance-get-coords">coords</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></span>: <span>*</span></span>
         </p>
       </div>
       <div>
@@ -1548,7 +1548,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/client/class/Entity.js~Entity.html#instance-set-coords">coords</a></span></span><span class="code" data-ice="signature">(coords: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></span>): <span>void</span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/common/class/Entity.js~Entity.html#instance-set-coords">coords</a></span></span><span class="code" data-ice="signature">(coords: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></span>): <span>void</span></span>
         </p>
       </div>
       <div>
@@ -1576,7 +1576,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/client/class/Entity.js~Entity.html#instance-set-coordsNoOffset">coordsNoOffset</a></span></span><span class="code" data-ice="signature">(coords: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></span>): <span>void</span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/common/class/Entity.js~Entity.html#instance-set-coordsNoOffset">coordsNoOffset</a></span></span><span class="code" data-ice="signature">(coords: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a></span>): <span>void</span></span>
         </p>
       </div>
       <div>
@@ -1604,7 +1604,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/client/class/Entity.js~Entity.html#instance-get-heading">heading</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>: <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/common/class/Entity.js~Entity.html#instance-get-heading">heading</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>: <span>*</span></span>
         </p>
       </div>
       <div>
@@ -1632,7 +1632,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/client/class/Entity.js~Entity.html#instance-set-heading">heading</a></span></span><span class="code" data-ice="signature">(heading: <span>*</span>): <span>void</span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/common/class/Entity.js~Entity.html#instance-set-heading">heading</a></span></span><span class="code" data-ice="signature">(heading: <span>*</span>): <span>void</span></span>
         </p>
       </div>
       <div>
@@ -1660,7 +1660,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/client/class/Entity.js~Entity.html#instance-get-health">health</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>: <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/common/class/Entity.js~Entity.html#instance-get-health">health</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>: <span>*</span></span>
         </p>
       </div>
       <div>
@@ -1688,7 +1688,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/client/class/Entity.js~Entity.html#instance-set-health">health</a></span></span><span class="code" data-ice="signature">(amount: <span>*</span>): <span>void</span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/common/class/Entity.js~Entity.html#instance-set-health">health</a></span></span><span class="code" data-ice="signature">(amount: <span>*</span>): <span>void</span></span>
         </p>
       </div>
       <div>
@@ -1716,7 +1716,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/client/class/Entity.js~Entity.html#instance-get-maxHealth">maxHealth</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>: <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/common/class/Entity.js~Entity.html#instance-get-maxHealth">maxHealth</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>: <span>*</span></span>
         </p>
       </div>
       <div>
@@ -1744,7 +1744,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/client/class/Entity.js~Entity.html#instance-set-maxHealth">maxHealth</a></span></span><span class="code" data-ice="signature">(amount: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>): <span>void</span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/common/class/Entity.js~Entity.html#instance-set-maxHealth">maxHealth</a></span></span><span class="code" data-ice="signature">(amount: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>): <span>void</span></span>
         </p>
       </div>
       <div>
@@ -1772,7 +1772,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/client/class/Entity.js~Entity.html#instance-get-model">model</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>: <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/common/class/Entity.js~Entity.html#instance-get-model">model</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>: <span>*</span></span>
         </p>
       </div>
       <div>
@@ -1800,7 +1800,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/client/class/Entity.js~Entity.html#instance-set-model">model</a></span></span><span class="code" data-ice="signature">(value: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>): <span>void</span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/common/class/Entity.js~Entity.html#instance-set-model">model</a></span></span><span class="code" data-ice="signature">(value: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>): <span>void</span></span>
         </p>
       </div>
       <div>
@@ -1828,7 +1828,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/client/class/Entity.js~Entity.html#instance-get-networkId">networkId</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>: <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/common/class/Entity.js~Entity.html#instance-get-networkId">networkId</a></span></span><span class="code" data-ice="signature">: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>: <span>*</span></span>
         </p>
       </div>
       <div>
@@ -1856,7 +1856,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/client/class/Entity.js~Entity.html#instance-member-id">id</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/common/class/Entity.js~Entity.html#instance-member-id">id</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
         </p>
       </div>
       <div>
@@ -1884,7 +1884,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/client/class/Entity.js~Entity.html#instance-member-_collision">_collision</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/common/class/Entity.js~Entity.html#instance-member-_collision">_collision</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
         </p>
       </div>
       <div>
@@ -1912,7 +1912,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/client/class/Entity.js~Entity.html#instance-member-_coords">_coords</a></span></span><span class="code" data-ice="signature">: {&quot;x&quot;: <span>*</span>, &quot;y&quot;: <span>*</span>, &quot;z&quot;: <span>*</span>}</span>
+          <span class="code" data-ice="name"><span><a href="class/src/common/class/Entity.js~Entity.html#instance-member-_coords">_coords</a></span></span><span class="code" data-ice="signature">: {&quot;x&quot;: <span>*</span>, &quot;y&quot;: <span>*</span>, &quot;z&quot;: <span>*</span>}</span>
         </p>
       </div>
       <div>
@@ -1940,7 +1940,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/client/class/Entity.js~Entity.html#instance-member-_heading">_heading</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/common/class/Entity.js~Entity.html#instance-member-_heading">_heading</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
         </p>
       </div>
       <div>
@@ -1968,7 +1968,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/client/class/Entity.js~Entity.html#instance-member-_health">_health</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/common/class/Entity.js~Entity.html#instance-member-_health">_health</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
         </p>
       </div>
       <div>
@@ -1996,7 +1996,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/client/class/Entity.js~Entity.html#instance-member-_maxHealth">_maxHealth</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/common/class/Entity.js~Entity.html#instance-member-_maxHealth">_maxHealth</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
         </p>
       </div>
       <div>
@@ -2024,7 +2024,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/client/class/Entity.js~Entity.html#instance-member-_model">_model</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/common/class/Entity.js~Entity.html#instance-member-_model">_model</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
         </p>
       </div>
       <div>
@@ -2052,7 +2052,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/client/class/Entity.js~Entity.html#instance-member-_networkId">_networkId</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/common/class/Entity.js~Entity.html#instance-member-_networkId">_networkId</a></span></span><span class="code" data-ice="signature">: <span>*</span></span>
         </p>
       </div>
       <div>
@@ -2080,7 +2080,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/client/class/Entity.js~Entity.html#instance-method-AsMission">AsMission</a></span></span><span class="code" data-ice="signature">(callback: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span>): <span>*</span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/common/class/Entity.js~Entity.html#instance-method-AsMission">AsMission</a></span></span><span class="code" data-ice="signature">(callback: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span>): <span>*</span></span>
         </p>
       </div>
       <div>
@@ -2108,7 +2108,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/client/class/Entity.js~Entity.html#instance-method-AsNetworked">AsNetworked</a></span></span><span class="code" data-ice="signature">(callback: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span>): <span>void</span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/common/class/Entity.js~Entity.html#instance-method-AsNetworked">AsNetworked</a></span></span><span class="code" data-ice="signature">(callback: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function">function</a></span>): <span>void</span></span>
         </p>
       </div>
       <div>
@@ -2136,7 +2136,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/client/class/Entity.js~Entity.html#instance-method-Delete">Delete</a></span></span><span class="code" data-ice="signature">(): <span>void</span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/common/class/Entity.js~Entity.html#instance-method-Delete">Delete</a></span></span><span class="code" data-ice="signature">(): <span>void</span></span>
         </p>
       </div>
       <div>
@@ -2164,7 +2164,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/client/class/Entity.js~Entity.html#instance-method-Exist">Exist</a></span></span><span class="code" data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/common/class/Entity.js~Entity.html#instance-method-Exist">Exist</a></span></span><span class="code" data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
         </p>
       </div>
       <div>
@@ -2192,7 +2192,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/client/class/Entity.js~Entity.html#instance-method-GetBoneIndex">GetBoneIndex</a></span></span><span class="code" data-ice="signature">(boneName: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/common/class/Entity.js~Entity.html#instance-method-GetBoneIndex">GetBoneIndex</a></span></span><span class="code" data-ice="signature">(boneName: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">string</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span></span>
         </p>
       </div>
       <div>
@@ -2220,7 +2220,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/client/class/Entity.js~Entity.html#instance-method-GetByNetworkId">GetByNetworkId</a></span></span><span class="code" data-ice="signature">(netId: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>): <span>void</span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/common/class/Entity.js~Entity.html#instance-method-GetByNetworkId">GetByNetworkId</a></span></span><span class="code" data-ice="signature">(netId: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>): <span>void</span></span>
         </p>
       </div>
       <div>
@@ -2248,7 +2248,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/client/class/Entity.js~Entity.html#instance-method-IsAlive">IsAlive</a></span></span><span class="code" data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/common/class/Entity.js~Entity.html#instance-method-IsAlive">IsAlive</a></span></span><span class="code" data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
         </p>
       </div>
       <div>
@@ -2276,7 +2276,7 @@
           
           
           
-          <span class="code" data-ice="name"><span><a href="class/src/client/class/Entity.js~Entity.html#instance-method-IsDead">IsDead</a></span></span><span class="code" data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+          <span class="code" data-ice="name"><span><a href="class/src/common/class/Entity.js~Entity.html#instance-method-IsDead">IsDead</a></span></span><span class="code" data-ice="signature">(): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
         </p>
       </div>
       <div>
@@ -2418,7 +2418,7 @@
   
   
 
-  <div data-ice="override"><h4>Override:</h4><span><a href="class/src/client/class/Entity.js~Entity.html#instance-get-collision">Entity#collision</a></span></div>
+  <div data-ice="override"><h4>Override:</h4><span><a href="class/src/common/class/Entity.js~Entity.html#instance-get-collision">Entity#collision</a></span></div>
 
   <div data-ice="properties">
 </div>
@@ -2461,7 +2461,7 @@
   
   
 
-  <div data-ice="override"><h4>Override:</h4><span><a href="class/src/client/class/Entity.js~Entity.html#instance-get-health">Entity#health</a></span></div>
+  <div data-ice="override"><h4>Override:</h4><span><a href="class/src/common/class/Entity.js~Entity.html#instance-get-health">Entity#health</a></span></div>
 
   <div data-ice="properties">
 </div>
@@ -2504,7 +2504,7 @@
   
   
 
-  <div data-ice="override"><h4>Override:</h4><span><a href="class/src/client/class/Entity.js~Entity.html#instance-member-id">Entity#id</a></span></div>
+  <div data-ice="override"><h4>Override:</h4><span><a href="class/src/common/class/Entity.js~Entity.html#instance-member-id">Entity#id</a></span></div>
 
   <div data-ice="properties">
 </div>
@@ -2918,7 +2918,7 @@
     
     
     
-    <span class="code" data-ice="name">CurrentVehicle</span><span class="code" data-ice="signature">(): <span><a href="class/src/client/class/Vehicle.js~Vehicle.html">Vehicle</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+    <span class="code" data-ice="name">CurrentVehicle</span><span class="code" data-ice="signature">(): <span><a href="class/src/common/class/Vehicle.js~Vehicle.html">Vehicle</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
     <span class="right-info">
       
       
@@ -2941,7 +2941,7 @@
     <table>
       <tbody>
         <tr>
-          <td class="return-type code" data-ice="returnType"><span><a href="class/src/client/class/Vehicle.js~Vehicle.html">Vehicle</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></td>
+          <td class="return-type code" data-ice="returnType"><span><a href="class/src/common/class/Vehicle.js~Vehicle.html">Vehicle</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></td>
           
         </tr>
       </tbody>
@@ -3578,7 +3578,7 @@
     
     
     
-    <span class="code" data-ice="name">IsInVehicle</span><span class="code" data-ice="signature">(vehicle: <span><a href="class/src/client/class/Vehicle.js~Vehicle.html">Vehicle</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+    <span class="code" data-ice="name">IsInVehicle</span><span class="code" data-ice="signature">(vehicle: <span><a href="class/src/common/class/Vehicle.js~Vehicle.html">Vehicle</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
     <span class="right-info">
       
       
@@ -3603,7 +3603,7 @@
     
     <tr data-ice="property" data-depth="0">
       <td data-ice="name" class="code" data-depth="0">vehicle</td>
-      <td data-ice="type" class="code"><span><a href="class/src/client/class/Vehicle.js~Vehicle.html">Vehicle</a></span></td>
+      <td data-ice="type" class="code"><span><a href="class/src/common/class/Vehicle.js~Vehicle.html">Vehicle</a></span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
@@ -3787,7 +3787,7 @@
     
     
     
-    <span class="code" data-ice="name">IsSittingInVehicle</span><span class="code" data-ice="signature">(vehicle: <span><a href="class/src/client/class/Vehicle.js~Vehicle.html">Vehicle</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+    <span class="code" data-ice="name">IsSittingInVehicle</span><span class="code" data-ice="signature">(vehicle: <span><a href="class/src/common/class/Vehicle.js~Vehicle.html">Vehicle</a></span>): <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
     <span class="right-info">
       
       
@@ -3812,7 +3812,7 @@
     
     <tr data-ice="property" data-depth="0">
       <td data-ice="name" class="code" data-depth="0">vehicle</td>
-      <td data-ice="type" class="code"><span><a href="class/src/client/class/Vehicle.js~Vehicle.html">Vehicle</a></span></td>
+      <td data-ice="type" class="code"><span><a href="class/src/common/class/Vehicle.js~Vehicle.html">Vehicle</a></span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
@@ -3913,7 +3913,7 @@
     
     
     
-    <span class="code" data-ice="name">LastVehicle</span><span class="code" data-ice="signature">(): <span><a href="class/src/client/class/Vehicle.js~Vehicle.html">Vehicle</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+    <span class="code" data-ice="name">LastVehicle</span><span class="code" data-ice="signature">(): <span><a href="class/src/common/class/Vehicle.js~Vehicle.html">Vehicle</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
     <span class="right-info">
       
       
@@ -3936,7 +3936,7 @@
     <table>
       <tbody>
         <tr>
-          <td class="return-type code" data-ice="returnType"><span><a href="class/src/client/class/Vehicle.js~Vehicle.html">Vehicle</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></td>
+          <td class="return-type code" data-ice="returnType"><span><a href="class/src/common/class/Vehicle.js~Vehicle.html">Vehicle</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></td>
           
         </tr>
       </tbody>
@@ -4854,7 +4854,7 @@
     
     
     
-    <span class="code" data-ice="name">SetIntoVehicle</span><span class="code" data-ice="signature">(vehicle: <span><a href="class/src/client/class/Vehicle.js~Vehicle.html">Vehicle</a></span>, seat: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>): <span>void</span></span>
+    <span class="code" data-ice="name">SetIntoVehicle</span><span class="code" data-ice="signature">(vehicle: <span><a href="class/src/common/class/Vehicle.js~Vehicle.html">Vehicle</a></span>, seat: <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">number</a></span>): <span>void</span></span>
     <span class="right-info">
       
       
@@ -4879,7 +4879,7 @@
     
     <tr data-ice="property" data-depth="0">
       <td data-ice="name" class="code" data-depth="0">vehicle</td>
-      <td data-ice="type" class="code"><span><a href="class/src/client/class/Vehicle.js~Vehicle.html">Vehicle</a></span></td>
+      <td data-ice="type" class="code"><span><a href="class/src/common/class/Vehicle.js~Vehicle.html">Vehicle</a></span></td>
       <td data-ice="appendix"></td>
       <td data-ice="description"></td>
     </tr>
@@ -5270,7 +5270,7 @@
     
     
     
-    <span class="code" data-ice="name">VehicleTryingToEnter</span><span class="code" data-ice="signature">(): <span><a href="class/src/client/class/Vehicle.js~Vehicle.html">Vehicle</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
+    <span class="code" data-ice="name">VehicleTryingToEnter</span><span class="code" data-ice="signature">(): <span><a href="class/src/common/class/Vehicle.js~Vehicle.html">Vehicle</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></span>
     <span class="right-info">
       
       
@@ -5293,7 +5293,7 @@
     <table>
       <tbody>
         <tr>
-          <td class="return-type code" data-ice="returnType"><span><a href="class/src/client/class/Vehicle.js~Vehicle.html">Vehicle</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></td>
+          <td class="return-type code" data-ice="returnType"><span><a href="class/src/common/class/Vehicle.js~Vehicle.html">Vehicle</a></span> | <span><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean">boolean</a></span></td>
           
         </tr>
       </tbody>

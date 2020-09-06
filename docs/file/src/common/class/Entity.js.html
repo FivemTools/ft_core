@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <base data-ice="baseUrl" href="../../../../">
-  <title data-ice="title">src/client/class/Game.js | @fivemtools/ft_core</title>
+  <title data-ice="title">src/common/class/Entity.js | @fivemtools/ft_core</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -65,263 +65,297 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><h1 data-ice="title">src/client/class/Game.js</h1>
+<div class="content" data-ice="content"><h1 data-ice="title">src/common/class/Entity.js</h1>
 <pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/*
- * @Project: FiveM Tools
- * @Authors: Samuelds, THEJean_Kevin
+ * @Project: FivemTools
+ * @Author: Samuelds
  * @License: GNU General Public License v3.0
  * @Source: https://github.com/FivemTools/ft_core
 */
 
-/*TODO
-player =&gt; avec class Player
-playerPed
-playerList()
-pvp
-*/
-class Game {
+/**
+ * Creates a new Entity.
+ * @example
+ * let entity = new Entity();
+ */
+class Entity {
 
     /**
-     * @description Get Hash
-     * @param {string} string
-     * @return {string|boolean}
+     * @param {number} entityId
      */
-    GenerateHash(string) {
-        if (string === undefined) {
-            return false;
+    constructor(entityId = 0) {
+        this.id = entityId;
+    }
+
+    /**
+     * @API Client
+     * @description Get entity model
+     * @return {string}
+     */
+    get model() {
+        if (this._model === undefined) {
+            this._model = GetEntityModel(this.id);
         }
-        return GetHashKey(string);
+        return this._model;
     }
 
     /**
-     * @description Gets the game language
-     * @return {object}
+     * @API Client, Server
+     * @description Set entity model value
+     * @param {string} value
+     * @return {void}
      */
-    get language() {
-        const id = GetUserLanguageId();
-        return { id: id, language: Languages[id] };
+    set model(value) {
+        this._model = value;
     }
 
     /**
-     * @description Gets how many milliseconds the game has been open this session
+     * @API Client, Server
+     * @description Get entity health
      * @return {number}
      */
-    get gameTime() {
-        return GetGameTimer();
+    get health() {
+        this._health = GetEntityHealth(this.id);
+        return this._health;
     }
 
     /**
-     * @description Sets the time scale of the Game.
-     * @param {Number} time The time scale, only accepts values between 0.0 and 1.0
+     * @API Client
+     * @description Set entity health
+     * @param amount
+     * @return {void}
      */
-    set timeScale(time) {
-        SetTimeScale(time &lt;= 1 &amp;&amp; time &gt;= 0 ? time : 1);
+    set health(amount) {
+        this._health = amount;
+        SetEntityHealth(this.id, amount);
     }
 
     /**
-     * @description Gets the total amount of frames rendered in this session
-     * @return {Number}}
-     */
-    get frameCount() {
-        return GetFrameCount();
-    }
-
-    /**
-     * @description Gets the current frame rate per second
-     * @return {Number}
-     */
-    GetFps() {
-        return 1 / this.lastFrameTime;
-    }
-
-    /**
-     * @description Gets the time it currently takes to render a frame, in seconds;
-     * @return {Number}
-     */
-    get lastFrameTime() {
-        return GetFrameTime();
-    }
-
-    /**
-     * @description Get the local player&apos;s Player object.
-     * @return {Number}
-     */
-    get player() {
-        const id = PlayerId();
-        if (this._player === undefined || id !== this._player) {
-            this._player = id;
-        }
-        return this._player;
-    }
-
-    /**
-     * @description  Get the maximum wanted level.
-     * @return {Number}
-     */
-    get maxWantedLevel() {
-        this.maxWantedLevel = GetMaxWantedLevel();
-        return this._maxWantedLevel;
-    }
-
-    /**
-     * @description Set the maximum wanted level the local client can get.
-     * @param  {Number} value betwwen 0 and 5
-     */
-    set maxWantedLevel(value) {
-        if (value &lt; 0) {
-            value = 0;
-        } else if (value &gt; 5) {
-            value = 5;
-        }
-        this._maxWantedLevel = value;
-        SetMaxWantedLevel(value);
-    }
-
-    /**
-     * @description Set the multiplier of the wanted level.
-     * @param {Number} value
-     */
-    set wantedMultiplier(value) {
-        this._maxWantedLevelMultiplier = value;
-        SetWantedLevelMultiplier(value);
-    }
-
-    /**
-     * @description Get the multiplier of the wanted level.
+     * @API Client, Server
+     * @description Get max health
      * @return {number}
      */
-    get wantedMultiplier() {
-        return this._maxWantedLevelMultiplier;
+    get maxHealth() {
+        this._maxHealth = GetEntityMaxHealth(this.id);
+        return this._maxHealth;
     }
 
     /**
-     * @description Set whether police blips should show on minimap.
-     * @param {Boolean} toggle
+     * @API Client
+     * @description Set max health
+     * @param {number} amount
+     * @return {void}
      */
-    set showPoliceBlipsOnRadar(toggle) {
-        SetPoliceRadarBlips(toggle);
+    set maxHealth(amount) {
+        this._maxHealth = amount;
+        SetEntityMaxHealth(this.id, this._maxHealth);
     }
 
     /**
-     * @description Get if nightvision is active.
-     * @return {Boolean}
+     * @API Client, Server
+     * @description Get coords
+     * @return {object} coords
      */
-    get nightVision() {
-        return GetUsingnightvision();
+    get coords() {
+        const coords = GetEntityCoords(this.id);
+        this._coords = { x : coords[0], y : coords[1], z : coords[2] };
+        return this._coords;
     }
 
     /**
-     * @description Toggle nightvision.
-     * @param {Boolean} toggle
+     * @API Client, Server
+     * @description Set coords
+     * @param {object} coords
+     * @return {void}
      */
-    set nightVision(toggle) {
-        SetNightvision(toggle);
+    set coords(coords) {
+        this._coords = coords;
+        SetEntityCoords(this.id, coords.x, coords.y, coords.z, false, false, false, true);
     }
 
     /**
-     * @description Get if thermal (heat) vision is active.
-     * @return {Boolean}
+     * @API Client
+     * @description Set coords no offset
+     * @param {object} coords
+     * @return {void}
      */
-    get thermalVision() {
-        return GetUsingseethrough();
+    set coordsNoOffset(coords) {
+        this._coords = coords;
+        SetEntityCoordsNoOffset(this.id, coords.x, coords.y, coords.z, true, true, true);
     }
 
     /**
-     * @description Toggle thermal (heat) vision.
-     * @param {Boolean} toggle
+     * @API Client, Server
+     * @description Get heading
+     * @return {number}
      */
-    set thermalVision(toggle) {
-        SetSeethrough(toggle);
+    get heading() {
+        this._heading = GetEntityHeading(this.id);
+        return this._heading;
     }
 
     /**
-     * @description  Return if players is in mission
-     * @return {Boolean}
+     * @API Client, Server
+     * @description Set heading
+     * @param heading
+     * @return {void}
      */
-    get isMissionActive() {
-        return GetMissionFlag();
+    set heading(heading) {
+        this._heading = heading;
+        SetEntityHeading(this.id, heading);
     }
 
     /**
-     * @description Set if players is in mission
-     * @param {Boolean} toggle
+     * @API Client
+     * @description Get collision status
+     * @return {boolean}
      */
-    set isMissionActive(toggle) {
-        SetMissionFlag(toggle);
+    get collision() {
+        this._collision = !GetEntityCollisionDisabled(this.id);
+        return this._collision;
     }
 
     /**
-     * @description *
-     * @return {Boolean}
+     * @API Client
+     * @description Set collision
+     * @param status
+     * @return {void}
      */
-    get isRandomEventActive() {
-        return GetRandomEventFlag() === 1;
+    set collision(status) {
+        this._collision = value;
+        SetEntityCollision(this.id, status, false);
     }
 
     /**
-     * @description *
-     * @param {Boolean} toggle
+     * @API Client, Server
+     * @description Get network id
+     * @return {number}
      */
-    set isRandomEventActive(toggle) {
-        SetRandomEventFlag(toggle ? 1 : 0);
+    get networkId() {
+        this._networkId = NetworkGetNetworkIdFromEntity(this.id);
+        return this._networkId;
     }
 
     /**
-     * @description *
-     * @return {Boolean}
+     * @API Client, Server
+     * @param {number} netId
+     * @return {void}
      */
-    get isCutsceneActive() {
-        return IsCutsceneActive();
+    GetByNetworkId(netId) {
+        this.id         = NetworkGetEntityFromNetworkId(netId);
+        this._networkId = netId;
     }
 
     /**
-     * @description Is a waypoint set on the map.
-     * @return {Boolean}
+     * @API Client
+     * @description Get if entity is dead
+     * @return {boolean}
      */
-    get isWaypointActive() {
-        return IsWaypointActive();
+    IsDead() {
+        return Boolean(IsEntityDead(this.id));
     }
 
     /**
-     * @description Is the player in the pause menu (ESC).
-     * @return {Boolean}
+     * @API Client
+     * @description Get if entity is alive
+     * @return {boolean}
      */
-    get isPaused() {
-        return IsPauseMenuActive();
+    IsAlive() {
+        return !this.isDead();
     }
 
     /**
-     * @description Force enable pause menu.
-     * @param {Boolean} toggle
+     * @API Client, Server
+     * @description Get if entity exist
+     * @return {boolean}
      */
-    set isPaused(toggle) {
-        SetPauseMenuActive(toggle);
+    Exist() {
+        return Boolean(DoesEntityExist(this.id));
     }
 
     /**
-     * @description Get if a loading screen is active.
-     * @return {Boolean}
+     * @API Client, Server
+     * @description Delete entity
+     * @return {void}
      */
-    get isLoading() {
-        return GetIsLoadingScreenActive();
+    Delete() {
+        SetEntityAsMissionEntity(this.id, false, true);
+        DeleteEntity(this.id);
     }
 
     /**
-     * @description Force player to stop the laoding screen
+     * @API Client
+     * @param {string} boneName
+     * @return {number}
      */
-    StopLoading() {
-        ShutdownLoadingScreen();
+    GetBoneIndex(boneName) {
+        return GetEntityBoneIndexByName(this.id, boneName);
     }
 
     /**
-     * @description Get current input mode.
-     * @returns {Number} InputMode: Mouse &amp; Keyboard (0) or GamePad(1)
+     * @API Client
+     * @description Set as mission
+     * @param {function} callback
+     * @return void
      */
-    get CurrentInputMode() {
-        return IsInputDisabled(2) ? InputMode.MOUSSEANDKEYBOARD : InputMode.GAMEPAD;
+    AsMission(callback) {
+        let waiting = 0;
+        let self    = this;
+        let timer   = setInterval(function() {
+            if (NetworkHasControlOfEntity(self.id)) {
+                SetEntityAsMissionEntity(self.id);
+                if (IsEntityAMissionEntity(self.id)) {
+                    clearInterval(timer);
+                    callback(true);
+                }
+            } else {
+                NetworkRequestControlOfEntity(this.id);
+            }
+
+            if (waiting === 10) {
+                clearInterval(timer);
+                callback(false);
+            }
+            waiting++;
+        }, 20);
     }
 
-}</code></pre>
+    /**
+     * @API Client
+     * @description Register as networked
+     * @param {function} callback
+     * @return {void}
+     */
+    AsNetworked(callback) {
+        let netId   = false;
+        let waiting = 0;
+        let self    = this;
+        let timer   = setInterval(function() {
+            if (NetworkHasControlOfEntity(self.id)) {
+                NetworkRegisterEntityAsNetworked(self.id);
+                netId = self.networkId;
+                if (netId) {
+                    SetNetworkIdCanMigrate(netId, true);
+                    SetNetworkIdExistsOnAllMachines(netId, true);
+                    if (NetworkDoesNetworkIdExist(netId)) {
+                        clearInterval(timer);
+                        callback(netId);
+                    }
+                }
+            } else {
+                NetworkRequestControlOfEntity(this.id);
+            }
+
+            if (waiting === 10) {
+                clearInterval(timer);
+                callback(false);
+            }
+            waiting++;
+        }, 20);
+    }
+
+}
+</code></pre>
 
 </div>
 

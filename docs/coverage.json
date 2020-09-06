@@ -23,20 +23,6 @@
         213
       ]
     },
-    "src/client/class/Entity.js": {
-      "expectCount": 32,
-      "actualCount": 24,
-      "undocumentLines": [
-        19,
-        29,
-        50,
-        71,
-        93,
-        125,
-        146,
-        167
-      ]
-    },
     "src/client/class/Game.js": {
       "expectCount": 32,
       "actualCount": 28,
@@ -60,59 +46,19 @@
       "expectCount": 12,
       "actualCount": 8,
       "undocumentLines": [
-        1,
-        7,
-        34,
-        45
-      ]
-    },
-    "src/client/class/Vehicle.js": {
-      "expectCount": 118,
-      "actualCount": 84,
-      "undocumentLines": [
-        22,
-        33,
-        54,
-        75,
-        96,
-        118,
-        146,
-        157,
-        169,
-        232,
-        261,
-        270,
-        290,
-        311,
-        332,
-        353,
-        374,
-        396,
-        418,
-        440,
-        462,
-        484,
-        506,
-        528,
-        557,
-        567,
-        588,
-        612,
-        633,
-        653,
-        675,
-        839,
-        895,
-        949
+        8,
+        15,
+        42,
+        53
       ]
     },
     "src/client/class/World.js": {
       "expectCount": 21,
       "actualCount": 18,
       "undocumentLines": [
-        1,
-        47,
-        280
+        8,
+        55,
+        287
       ]
     },
     "src/client/enum/AudioFlag.js": {
@@ -203,6 +149,60 @@
       "undocumentLines": [
         8,
         19
+      ]
+    },
+    "src/common/class/Entity.js": {
+      "expectCount": 32,
+      "actualCount": 24,
+      "undocumentLines": [
+        19,
+        29,
+        50,
+        71,
+        93,
+        125,
+        146,
+        167
+      ]
+    },
+    "src/common/class/Vehicle.js": {
+      "expectCount": 118,
+      "actualCount": 84,
+      "undocumentLines": [
+        22,
+        33,
+        54,
+        75,
+        96,
+        118,
+        146,
+        157,
+        169,
+        232,
+        261,
+        270,
+        290,
+        311,
+        332,
+        353,
+        374,
+        396,
+        418,
+        440,
+        462,
+        484,
+        506,
+        528,
+        557,
+        567,
+        588,
+        612,
+        633,
+        653,
+        675,
+        839,
+        895,
+        949
       ]
     },
     "src/common/utils/Color.js": {
