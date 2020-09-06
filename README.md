@@ -16,7 +16,7 @@ Last add, into the server.cfg file :
 
 ### Documentation
 
-- Online : https://ft_core.fivem.tools
+- Online : https://ft_core.sds.ovh/
 - Local : `docs` directory (github)
 
 ## License
