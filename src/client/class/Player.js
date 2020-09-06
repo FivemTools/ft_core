@@ -1,4 +1,12 @@
+/*
+ * @Project: FivemTools
+ * @Author: THEJean_Kevin
+ * @License: GNU General Public License v3.0
+ * @Source: https://github.com/FivemTools/ft_core
+*/
+
 class Player extends Ped {
+
     /**
      * @description Create a player class
      * @param {Number} identifier Get a specified player if it's indicate

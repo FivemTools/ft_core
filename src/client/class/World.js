@@ -1,4 +1,12 @@
+/*
+ * @Project: FivemTools
+ * @Author: THEJean_Kevin
+ * @License: GNU General Public License v3.0
+ * @Source: https://github.com/FivemTools/ft_core
+*/
+
 class World {
+
     /**
      * @description Get the date of the world
      * @returns {Date}
@@ -24,9 +32,9 @@ class World {
     }
 
     /**
-   * @description Disables all emissive textures, street/building/vehicle lights. "EMP" effect.
-   * @param {Boolean}
-   */
+     * @description Disables all emissive textures, street/building/vehicle lights. "EMP" effect.
+     * @param {Boolean}
+     */
     set blackout(value) {
         SetArtificialLightsState(value);
     }
@@ -184,6 +192,7 @@ class World {
             SetWeatherTypeOverTime(weather, duration);
         }
     }
+
     /**
      * @description Draw a marker at desired location
      * @param {Boolean} enable Draw directly or not
@@ -234,9 +243,7 @@ class World {
 
     /**
      * @description Enable or disable the marker
-     * 
      * @param {Number} id 
-     * 
      * @returns {Boolean} The state of marker
      */
     ToggleMarker(id) {

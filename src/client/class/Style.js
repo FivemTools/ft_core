@@ -1,4 +1,12 @@
+/*
+ * @Project: FivemTools
+ * @Author: THEJean_Kevin
+ * @License: GNU General Public License v3.0
+ * @Source: https://github.com/FivemTools/ft_core
+*/
+
 class Style {
+
     constructor(ped) {
         this._ped = ped
         if (ped.id) { this.GetHeadData() }
@@ -12,9 +20,9 @@ class Style {
     _pedProps = {};
 
     /**
-    * @descriptionGets Set mother for ressemblance
-    * @param {Number}
-    */
+     * @descriptionGets Set mother for ressemblance
+     * @param {Number}
+     */
     set mother(value) {
         this._mother = value;
         SetPedHeadBlendData(this._ped.id, this._father, this._mother, null, this._father, this._mother, null, this._shape, this._skin, null, true);
@@ -25,9 +33,9 @@ class Style {
     }
 
     /**
-    * @descriptionGets Set father for ressemblance
-    * @param {Number}
-    */
+     * @descriptionGets Set father for ressemblance
+     * @param {Number}
+     */
     set father(value) {
         this._father = value;
         SetPedHeadBlendData(this._ped.id, this._father, this._mother, null, this._father, this._mother, null, this._shape, this._skin, null, true);
@@ -38,9 +46,9 @@ class Style {
     }
 
     /**
-    * @descriptionGets "Select how much of your head shape should be inherited from your father or mother. All the way on 0.0 is your dad, all the way on 1.0 is your mom."
-    * @param {Number}
-    */
+     * @descriptionGets "Select how much of your head shape should be inherited from your father or mother. All the way on 0.0 is your dad, all the way on 1.0 is your mom."
+     * @param {Number}
+     */
     set shape(value) {
         this._shape = value;
         SetPedHeadBlendData(this._ped.id, this._father, this._mother, null, this._father, this._mother, null, this._shape, this._skin, null, true);
@@ -51,9 +59,9 @@ class Style {
     }
 
     /**
-    * @descriptionGets "Select how much of your body skin tone should be inherited from your father or mother. All the way on 0.0 is your dad, all the way on 1.0 is your mom."
-    * @param {Number}
-    */
+     * @descriptionGets "Select how much of your body skin tone should be inherited from your father or mother. All the way on 0.0 is your dad, all the way on 1.0 is your mom."
+     * @param {Number}
+     */
     set skin(value) {
         this._skin = value;
         SetPedHeadBlendData(this._ped.id, this._father, this._mother, null, this._father, this._mother, null, this._shape, this._skin, null, true);
