@@ -2,8 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <base data-ice="baseUrl">
-  <title data-ice="title">Home | @fivemtools/ft_core</title>
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">src/common/utils/Color.js | @fivemtools/ft_core</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -65,24 +65,136 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="ft-core">ft_core</h1><p>To create resources on FiveM</p>
-<h3 id="prerequisites">Prerequisites</h3><ul>
-<li><a href="https://nodejs.org/">Nodejs</a></li>
-</ul>
-<h3 id="installing">Installing</h3><p>Copy <code>exemple</code> directory and rename to <code>ft_exemple</code>.</p>
-<p>Last add, into the server.cfg file :</p>
-<pre><code><code class="source-code prettyprint">    start ft_exemple</code>
-</code></pre><h3 id="documentation">Documentation</h3><ul>
-<li>Online : <a href="https://ft_core.fivem.tools">https://ft_core.fivem.tools</a></li>
-<li>Local : <code>docs</code> directory (github)</li>
-</ul>
-<h2 id="license">License</h2><p>This project is licensed under the GNU General Public License v3.0 - see the <a href="LICENSE">LICENSE</a> file for details</p>
-<h2 id="contributors--">Contributors :</h2><ul>
-<li>Samuelds</li>
-<li>THEJean-Kevin</li>
-<li>LH-Lawliet</li>
-</ul>
-</div>
+<div class="content" data-ice="content"><h1 data-ice="title">src/common/utils/Color.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/*
+ * @Project: FiveM Tools
+ * @Authors: Samuelds, THEJean_Kevin
+ * @License: GNU General Public License v3.0
+ * @Source: https://github.com/FivemTools/ft_core
+*/
+
+class Color {
+
+    /**
+     * @param {Number} red
+     * @param {Number} green
+     * @param {Number} blue
+     * @param {Number} alpha
+     */
+    constructor(red = 0, green = 0, blue = 0, alpha = 0) {
+        this.red = red;
+        this.green = green;
+        this.blue = blue;
+        this.alpha = alpha;
+    }
+
+    /**
+     *
+     * @returns {string}
+     * @constructor
+     */
+    RGBToHex() {
+        let r = this.r.toString(16);
+        let g = this.g.toString(16);
+        let b = this.b.toString(16);
+
+        if (r.length == 1) {
+            r = &quot;0&quot; + r;
+        }
+
+        if (g.length == 1) {
+            g = &quot;0&quot; + g;
+        }
+        if (b.length == 1) {
+            b = &quot;0&quot; + b;
+        }
+
+        return &quot;#&quot; + r + g + b;
+    }
+
+    /**
+     *
+     * @returns {string}
+     * @constructor
+     */
+    RGBAToHexA() {
+        let r = this.r.toString(16);
+        let g = this.g.toString(16);
+        let b = this.b.toString(16);
+        let a = Math.round(this.a * 255).toString(16);
+
+        if (r.length == 1) {
+            r = &quot;0&quot; + r;
+        }
+
+        if (g.length == 1) {
+            g = &quot;0&quot; + g;
+        }
+
+        if (b.length == 1) {
+            b = &quot;0&quot; + b;
+        }
+
+        if (a.length == 1) {
+            a = &quot;0&quot; + a;
+        }
+        return &quot;#&quot; + r + g + b + a;
+    }
+
+    /**
+     *
+     * @param h
+     * @returns {Color}
+     */
+    hexToRGB(h) {
+        if (/^#([\da-f]{3}){1,2}$/i.test(h)) {
+            // 3 digits
+            if (h.length == 4) {
+                this.r = &quot;0x&quot; + h[1] + h[1];
+                this.g = &quot;0x&quot; + h[2] + h[2];
+                this.b = &quot;0x&quot; + h[3] + h[3];
+                // 6 digits
+            } else if (h.length == 7) {
+                this.r = &quot;0x&quot; + h[1] + h[2];
+                this.g = &quot;0x&quot; + h[3] + h[4];
+                this.b = &quot;0x&quot; + h[5] + h[6];
+            }
+
+            return this
+        } else {
+            console.error(h + &quot; was not a hex value&quot;);
+        }
+    }
+
+    /**
+     *
+     * @param h
+     * @returns {Color}
+     */
+    hexAToRGBA(h) {
+        if (/^#([\da-f]{4}){1,2}$/i.test(h)) {
+            if (h.length == 5) {
+                this.r = &quot;0x&quot; + h[1] + h[1];
+                this.g = &quot;0x&quot; + h[2] + h[2];
+                this.b = &quot;0x&quot; + h[3] + h[3];
+                this.a = &quot;0x&quot; + h[4] + h[4];
+
+            } else if (h.length == 9) {
+                this.r = &quot;0x&quot; + h[1] + h[2];
+                this.g = &quot;0x&quot; + h[3] + h[4];
+                this.b = &quot;0x&quot; + h[5] + h[6];
+                this.a = &quot;0x&quot; + h[7] + h[8];
+            }
+            this.a = +(this.a / 255).toFixed(3);
+
+            return this;
+        } else {
+            console.error(h + &quot; was not a hex a value&quot;);
+        }
+    }
+
+}</code></pre>
+
 </div>
 
 <footer class="footer">

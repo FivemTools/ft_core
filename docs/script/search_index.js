@@ -12,6 +12,24 @@ window.esdocSearchIndex = [
     "variable"
   ],
   [
+    "@fivemtools/ft_core/src/client/class/blip.js~blip",
+    "class/src/client/class/Blip.js~Blip.html",
+    "<span>Blip</span> <span class=\"search-result-import-path\">@fivemtools/ft_core/src/client/class/Blip.js</span>",
+    "class"
+  ],
+  [
+    "@fivemtools/ft_core/src/client/enum/cloudhat.js~cloudhat",
+    "variable/index.html#static-variable-CloudHat",
+    "<span>CloudHat</span> <span class=\"search-result-import-path\">@fivemtools/ft_core/src/client/enum/CloudHat.js</span>",
+    "variable"
+  ],
+  [
+    "@fivemtools/ft_core/src/common/utils/color.js~color",
+    "class/src/common/utils/Color.js~Color.html",
+    "<span>Color</span> <span class=\"search-result-import-path\">@fivemtools/ft_core/src/common/utils/Color.js</span>",
+    "class"
+  ],
+  [
     "@fivemtools/ft_core/src/client/enum/control.js~control",
     "variable/index.html#static-variable-Control",
     "<span>Control</span> <span class=\"search-result-import-path\">@fivemtools/ft_core/src/client/enum/Control.js</span>",
@@ -36,10 +54,22 @@ window.esdocSearchIndex = [
     "function"
   ],
   [
+    "@fivemtools/ft_core/src/client/enum/styleenum.js~faceenum",
+    "variable/index.html#static-variable-FaceEnum",
+    "<span>FaceEnum</span> <span class=\"search-result-import-path\">@fivemtools/ft_core/src/client/enum/StyleEnum.js</span>",
+    "variable"
+  ],
+  [
     "@fivemtools/ft_core/src/client/class/game.js~game",
     "class/src/client/class/Game.js~Game.html",
     "<span>Game</span> <span class=\"search-result-import-path\">@fivemtools/ft_core/src/client/class/Game.js</span>",
     "class"
+  ],
+  [
+    "@fivemtools/ft_core/src/client/enum/styleenum.js~headappearanceenum",
+    "variable/index.html#static-variable-HeadAppearanceEnum",
+    "<span>HeadAppearanceEnum</span> <span class=\"search-result-import-path\">@fivemtools/ft_core/src/client/enum/StyleEnum.js</span>",
+    "variable"
   ],
   [
     "@fivemtools/ft_core/src/client/enum/helmettype.js~helmettype",
@@ -78,6 +108,24 @@ window.esdocSearchIndex = [
     "class"
   ],
   [
+    "@fivemtools/ft_core/src/client/enum/styleenum.js~pedcomponents",
+    "variable/index.html#static-variable-PedComponents",
+    "<span>PedComponents</span> <span class=\"search-result-import-path\">@fivemtools/ft_core/src/client/enum/StyleEnum.js</span>",
+    "variable"
+  ],
+  [
+    "@fivemtools/ft_core/src/client/enum/styleenum.js~pedprops",
+    "variable/index.html#static-variable-PedProps",
+    "<span>PedProps</span> <span class=\"search-result-import-path\">@fivemtools/ft_core/src/client/enum/StyleEnum.js</span>",
+    "variable"
+  ],
+  [
+    "@fivemtools/ft_core/src/client/class/player.js~player",
+    "class/src/client/class/Player.js~Player.html",
+    "<span>Player</span> <span class=\"search-result-import-path\">@fivemtools/ft_core/src/client/class/Player.js</span>",
+    "class"
+  ],
+  [
     "@fivemtools/ft_core/src/client/enum/ragdolltype.js~ragdolltype",
     "variable/index.html#static-variable-RagdollType",
     "<span>RagdollType</span> <span class=\"search-result-import-path\">@fivemtools/ft_core/src/client/enum/RagdollType.js</span>",
@@ -99,6 +147,30 @@ window.esdocSearchIndex = [
     "@fivemtools/ft_core/src/client/enum/driving.js~vehicledrivingflags",
     "variable/index.html#static-variable-VehicleDrivingFlags",
     "<span>VehicleDrivingFlags</span> <span class=\"search-result-import-path\">@fivemtools/ft_core/src/client/enum/Driving.js</span>",
+    "variable"
+  ],
+  [
+    "@fivemtools/ft_core/src/client/enum/vehicle.js~vehicleseat",
+    "variable/index.html#static-variable-VehicleSeat",
+    "<span>VehicleSeat</span> <span class=\"search-result-import-path\">@fivemtools/ft_core/src/client/enum/Vehicle.js</span>",
+    "variable"
+  ],
+  [
+    "@fivemtools/ft_core/src/client/enum/weather.js~weather",
+    "variable/index.html#static-variable-Weather",
+    "<span>Weather</span> <span class=\"search-result-import-path\">@fivemtools/ft_core/src/client/enum/Weather.js</span>",
+    "variable"
+  ],
+  [
+    "@fivemtools/ft_core/src/client/class/world.js~world",
+    "class/src/client/class/World.js~World.html",
+    "<span>World</span> <span class=\"search-result-import-path\">@fivemtools/ft_core/src/client/class/World.js</span>",
+    "class"
+  ],
+  [
+    "@fivemtools/ft_core/src/client/class/world.js~_markerlist",
+    "variable/index.html#static-variable-_MarkerList",
+    "<span>_MarkerList</span> <span class=\"search-result-import-path\">@fivemtools/ft_core/src/client/class/World.js</span>",
     "variable"
   ],
   [
@@ -480,6 +552,276 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
+    "src/client/class/blip.js",
+    "file/src/client/class/Blip.js.html",
+    "src/client/class/Blip.js",
+    "file"
+  ],
+  [
+    "src/client/class/blip.js~blip#blipfromentity",
+    "class/src/client/class/Blip.js~Blip.html#instance-method-BlipFromEntity",
+    "src/client/class/Blip.js~Blip#BlipFromEntity",
+    "method"
+  ],
+  [
+    "src/client/class/blip.js~blip#delete",
+    "class/src/client/class/Blip.js~Blip.html#instance-method-Delete",
+    "src/client/class/Blip.js~Blip#Delete",
+    "method"
+  ],
+  [
+    "src/client/class/blip.js~blip#exist",
+    "class/src/client/class/Blip.js~Blip.html#instance-method-Exist",
+    "src/client/class/Blip.js~Blip#Exist",
+    "method"
+  ],
+  [
+    "src/client/class/blip.js~blip#iscrew",
+    "class/src/client/class/Blip.js~Blip.html#instance-method-IsCrew",
+    "src/client/class/Blip.js~Blip#IsCrew",
+    "method"
+  ],
+  [
+    "src/client/class/blip.js~blip#isfriend",
+    "class/src/client/class/Blip.js~Blip.html#instance-method-IsFriend",
+    "src/client/class/Blip.js~Blip#IsFriend",
+    "method"
+  ],
+  [
+    "src/client/class/blip.js~blip#isfriendcrew",
+    "class/src/client/class/Blip.js~Blip.html#instance-method-IsFriendCrew",
+    "src/client/class/Blip.js~Blip#IsFriendCrew",
+    "method"
+  ],
+  [
+    "src/client/class/blip.js~blip#isfriendly",
+    "class/src/client/class/Blip.js~Blip.html#instance-method-IsFriendly",
+    "src/client/class/Blip.js~Blip#IsFriendly",
+    "method"
+  ],
+  [
+    "src/client/class/blip.js~blip#newblipforarea",
+    "class/src/client/class/Blip.js~Blip.html#instance-method-NewBlipForArea",
+    "src/client/class/Blip.js~Blip#NewBlipForArea",
+    "method"
+  ],
+  [
+    "src/client/class/blip.js~blip#newblipforcoord",
+    "class/src/client/class/Blip.js~Blip.html#instance-method-NewBlipForCoord",
+    "src/client/class/Blip.js~Blip#NewBlipForCoord",
+    "method"
+  ],
+  [
+    "src/client/class/blip.js~blip#newblipforentity",
+    "class/src/client/class/Blip.js~Blip.html#instance-method-NewBlipForEntity",
+    "src/client/class/Blip.js~Blip#NewBlipForEntity",
+    "method"
+  ],
+  [
+    "src/client/class/blip.js~blip#newblipforpickup",
+    "class/src/client/class/Blip.js~Blip.html#instance-method-NewBlipForPickup",
+    "src/client/class/Blip.js~Blip#NewBlipForPickup",
+    "method"
+  ],
+  [
+    "src/client/class/blip.js~blip#newblipforradius",
+    "class/src/client/class/Blip.js~Blip.html#instance-method-NewBlipForRadius",
+    "src/client/class/Blip.js~Blip#NewBlipForRadius",
+    "method"
+  ],
+  [
+    "src/client/class/blip.js~blip#removenumberlabel",
+    "class/src/client/class/Blip.js~Blip.html#instance-method-RemoveNumberLabel",
+    "src/client/class/Blip.js~Blip#RemoveNumberLabel",
+    "method"
+  ],
+  [
+    "src/client/class/blip.js~blip#showroute",
+    "class/src/client/class/Blip.js~Blip.html#instance-method-ShowRoute",
+    "src/client/class/Blip.js~Blip#ShowRoute",
+    "method"
+  ],
+  [
+    "src/client/class/blip.js~blip#updatedata",
+    "class/src/client/class/Blip.js~Blip.html#instance-method-UpdateData",
+    "src/client/class/Blip.js~Blip#UpdateData",
+    "method"
+  ],
+  [
+    "src/client/class/blip.js~blip#_name",
+    "class/src/client/class/Blip.js~Blip.html#instance-member-_name",
+    "src/client/class/Blip.js~Blip#_name",
+    "member"
+  ],
+  [
+    "src/client/class/blip.js~blip#_rotation",
+    "class/src/client/class/Blip.js~Blip.html#instance-member-_rotation",
+    "src/client/class/Blip.js~Blip#_rotation",
+    "member"
+  ],
+  [
+    "src/client/class/blip.js~blip#_scale",
+    "class/src/client/class/Blip.js~Blip.html#instance-member-_scale",
+    "src/client/class/Blip.js~Blip#_scale",
+    "member"
+  ],
+  [
+    "src/client/class/blip.js~blip#alpha",
+    "class/src/client/class/Blip.js~Blip.html#instance-get-alpha",
+    "src/client/class/Blip.js~Blip#alpha",
+    "member"
+  ],
+  [
+    "src/client/class/blip.js~blip#alpha",
+    "class/src/client/class/Blip.js~Blip.html#instance-set-alpha",
+    "src/client/class/Blip.js~Blip#alpha",
+    "member"
+  ],
+  [
+    "src/client/class/blip.js~blip#color",
+    "class/src/client/class/Blip.js~Blip.html#instance-get-color",
+    "src/client/class/Blip.js~Blip#color",
+    "member"
+  ],
+  [
+    "src/client/class/blip.js~blip#color",
+    "class/src/client/class/Blip.js~Blip.html#instance-set-color",
+    "src/client/class/Blip.js~Blip#color",
+    "member"
+  ],
+  [
+    "src/client/class/blip.js~blip#coord",
+    "class/src/client/class/Blip.js~Blip.html#instance-get-coord",
+    "src/client/class/Blip.js~Blip#coord",
+    "member"
+  ],
+  [
+    "src/client/class/blip.js~blip#coord",
+    "class/src/client/class/Blip.js~Blip.html#instance-set-coord",
+    "src/client/class/Blip.js~Blip#coord",
+    "member"
+  ],
+  [
+    "src/client/class/blip.js~blip#display",
+    "class/src/client/class/Blip.js~Blip.html#instance-get-display",
+    "src/client/class/Blip.js~Blip#display",
+    "member"
+  ],
+  [
+    "src/client/class/blip.js~blip#display",
+    "class/src/client/class/Blip.js~Blip.html#instance-set-display",
+    "src/client/class/Blip.js~Blip#display",
+    "member"
+  ],
+  [
+    "src/client/class/blip.js~blip#entity",
+    "class/src/client/class/Blip.js~Blip.html#instance-get-entity",
+    "src/client/class/Blip.js~Blip#entity",
+    "member"
+  ],
+  [
+    "src/client/class/blip.js~blip#id",
+    "class/src/client/class/Blip.js~Blip.html#instance-member-id",
+    "src/client/class/Blip.js~Blip#id",
+    "member"
+  ],
+  [
+    "src/client/class/blip.js~blip#isflashing",
+    "class/src/client/class/Blip.js~Blip.html#instance-set-isFlashing",
+    "src/client/class/Blip.js~Blip#isFlashing",
+    "member"
+  ],
+  [
+    "src/client/class/blip.js~blip#isflashing",
+    "class/src/client/class/Blip.js~Blip.html#instance-get-isFlashing",
+    "src/client/class/Blip.js~Blip#isFlashing",
+    "member"
+  ],
+  [
+    "src/client/class/blip.js~blip#isonminimap",
+    "class/src/client/class/Blip.js~Blip.html#instance-get-isOnMinimap",
+    "src/client/class/Blip.js~Blip#isOnMinimap",
+    "member"
+  ],
+  [
+    "src/client/class/blip.js~blip#isshortrange",
+    "class/src/client/class/Blip.js~Blip.html#instance-get-isShortRange",
+    "src/client/class/Blip.js~Blip#isShortRange",
+    "member"
+  ],
+  [
+    "src/client/class/blip.js~blip#isshortrange",
+    "class/src/client/class/Blip.js~Blip.html#instance-set-isShortRange",
+    "src/client/class/Blip.js~Blip#isShortRange",
+    "member"
+  ],
+  [
+    "src/client/class/blip.js~blip#name",
+    "class/src/client/class/Blip.js~Blip.html#instance-set-name",
+    "src/client/class/Blip.js~Blip#name",
+    "member"
+  ],
+  [
+    "src/client/class/blip.js~blip#name",
+    "class/src/client/class/Blip.js~Blip.html#instance-get-name",
+    "src/client/class/Blip.js~Blip#name",
+    "member"
+  ],
+  [
+    "src/client/class/blip.js~blip#numberlabel",
+    "class/src/client/class/Blip.js~Blip.html#instance-set-numberLabel",
+    "src/client/class/Blip.js~Blip#numberLabel",
+    "member"
+  ],
+  [
+    "src/client/class/blip.js~blip#priority",
+    "class/src/client/class/Blip.js~Blip.html#instance-set-priority",
+    "src/client/class/Blip.js~Blip#priority",
+    "member"
+  ],
+  [
+    "src/client/class/blip.js~blip#rotation",
+    "class/src/client/class/Blip.js~Blip.html#instance-set-rotation",
+    "src/client/class/Blip.js~Blip#rotation",
+    "member"
+  ],
+  [
+    "src/client/class/blip.js~blip#scale",
+    "class/src/client/class/Blip.js~Blip.html#instance-get-scale",
+    "src/client/class/Blip.js~Blip#scale",
+    "member"
+  ],
+  [
+    "src/client/class/blip.js~blip#scale",
+    "class/src/client/class/Blip.js~Blip.html#instance-set-scale",
+    "src/client/class/Blip.js~Blip#scale",
+    "member"
+  ],
+  [
+    "src/client/class/blip.js~blip#secondarycolor",
+    "class/src/client/class/Blip.js~Blip.html#instance-set-secondaryColor",
+    "src/client/class/Blip.js~Blip#secondaryColor",
+    "member"
+  ],
+  [
+    "src/client/class/blip.js~blip#sprite",
+    "class/src/client/class/Blip.js~Blip.html#instance-get-sprite",
+    "src/client/class/Blip.js~Blip#sprite",
+    "member"
+  ],
+  [
+    "src/client/class/blip.js~blip#sprite",
+    "class/src/client/class/Blip.js~Blip.html#instance-set-sprite",
+    "src/client/class/Blip.js~Blip#sprite",
+    "member"
+  ],
+  [
+    "src/client/class/blip.js~blip#type",
+    "class/src/client/class/Blip.js~Blip.html#instance-get-type",
+    "src/client/class/Blip.js~Blip#type",
+    "member"
+  ],
+  [
     "src/client/class/control.js",
     "file/src/client/class/Control.js.html",
     "src/client/class/Control.js",
@@ -510,9 +852,9 @@ window.esdocSearchIndex = [
     "method"
   ],
   [
-    "src/client/class/entity.js~entity#exists",
-    "class/src/client/class/Entity.js~Entity.html#instance-method-Exists",
-    "src/client/class/Entity.js~Entity#Exists",
+    "src/client/class/entity.js~entity#exist",
+    "class/src/client/class/Entity.js~Entity.html#instance-method-Exist",
+    "src/client/class/Entity.js~Entity#Exist",
     "method"
   ],
   [
@@ -537,18 +879,6 @@ window.esdocSearchIndex = [
     "src/client/class/entity.js~entity#isdead",
     "class/src/client/class/Entity.js~Entity.html#instance-method-IsDead",
     "src/client/class/Entity.js~Entity#IsDead",
-    "method"
-  ],
-  [
-    "src/client/class/entity.js~entity#setcoords",
-    "class/src/client/class/Entity.js~Entity.html#instance-method-SetCoords",
-    "src/client/class/Entity.js~Entity#SetCoords",
-    "method"
-  ],
-  [
-    "src/client/class/entity.js~entity#setmodelbyname",
-    "class/src/client/class/Entity.js~Entity.html#instance-method-SetModelByName",
-    "src/client/class/Entity.js~Entity#SetModelByName",
     "method"
   ],
   [
@@ -595,13 +925,13 @@ window.esdocSearchIndex = [
   ],
   [
     "src/client/class/entity.js~entity#collision",
-    "class/src/client/class/Entity.js~Entity.html#instance-set-collision",
+    "class/src/client/class/Entity.js~Entity.html#instance-get-collision",
     "src/client/class/Entity.js~Entity#collision",
     "member"
   ],
   [
     "src/client/class/entity.js~entity#collision",
-    "class/src/client/class/Entity.js~Entity.html#instance-get-collision",
+    "class/src/client/class/Entity.js~Entity.html#instance-set-collision",
     "src/client/class/Entity.js~Entity#collision",
     "member"
   ],
@@ -643,13 +973,13 @@ window.esdocSearchIndex = [
   ],
   [
     "src/client/class/entity.js~entity#health",
-    "class/src/client/class/Entity.js~Entity.html#instance-set-health",
+    "class/src/client/class/Entity.js~Entity.html#instance-get-health",
     "src/client/class/Entity.js~Entity#health",
     "member"
   ],
   [
     "src/client/class/entity.js~entity#health",
-    "class/src/client/class/Entity.js~Entity.html#instance-get-health",
+    "class/src/client/class/Entity.js~Entity.html#instance-set-health",
     "src/client/class/Entity.js~Entity#health",
     "member"
   ],
@@ -673,13 +1003,13 @@ window.esdocSearchIndex = [
   ],
   [
     "src/client/class/entity.js~entity#model",
-    "class/src/client/class/Entity.js~Entity.html#instance-set-model",
+    "class/src/client/class/Entity.js~Entity.html#instance-get-model",
     "src/client/class/Entity.js~Entity#model",
     "member"
   ],
   [
     "src/client/class/entity.js~entity#model",
-    "class/src/client/class/Entity.js~Entity.html#instance-get-model",
+    "class/src/client/class/Entity.js~Entity.html#instance-set-model",
     "src/client/class/Entity.js~Entity#model",
     "member"
   ],
@@ -763,25 +1093,25 @@ window.esdocSearchIndex = [
   ],
   [
     "src/client/class/game.js~game#ismissionactive",
-    "class/src/client/class/Game.js~Game.html#instance-set-isMissionActive",
-    "src/client/class/Game.js~Game#isMissionActive",
-    "member"
-  ],
-  [
-    "src/client/class/game.js~game#ismissionactive",
     "class/src/client/class/Game.js~Game.html#instance-get-isMissionActive",
     "src/client/class/Game.js~Game#isMissionActive",
     "member"
   ],
   [
-    "src/client/class/game.js~game#ispaused",
-    "class/src/client/class/Game.js~Game.html#instance-set-isPaused",
-    "src/client/class/Game.js~Game#isPaused",
+    "src/client/class/game.js~game#ismissionactive",
+    "class/src/client/class/Game.js~Game.html#instance-set-isMissionActive",
+    "src/client/class/Game.js~Game#isMissionActive",
     "member"
   ],
   [
     "src/client/class/game.js~game#ispaused",
     "class/src/client/class/Game.js~Game.html#instance-get-isPaused",
+    "src/client/class/Game.js~Game#isPaused",
+    "member"
+  ],
+  [
+    "src/client/class/game.js~game#ispaused",
+    "class/src/client/class/Game.js~Game.html#instance-set-isPaused",
     "src/client/class/Game.js~Game#isPaused",
     "member"
   ],
@@ -829,13 +1159,13 @@ window.esdocSearchIndex = [
   ],
   [
     "src/client/class/game.js~game#nightvision",
-    "class/src/client/class/Game.js~Game.html#instance-set-nightVision",
+    "class/src/client/class/Game.js~Game.html#instance-get-nightVision",
     "src/client/class/Game.js~Game#nightVision",
     "member"
   ],
   [
     "src/client/class/game.js~game#nightvision",
-    "class/src/client/class/Game.js~Game.html#instance-get-nightVision",
+    "class/src/client/class/Game.js~Game.html#instance-set-nightVision",
     "src/client/class/Game.js~Game#nightVision",
     "member"
   ],
@@ -853,13 +1183,13 @@ window.esdocSearchIndex = [
   ],
   [
     "src/client/class/game.js~game#thermalvision",
-    "class/src/client/class/Game.js~Game.html#instance-set-thermalVision",
+    "class/src/client/class/Game.js~Game.html#instance-get-thermalVision",
     "src/client/class/Game.js~Game#thermalVision",
     "member"
   ],
   [
     "src/client/class/game.js~game#thermalvision",
-    "class/src/client/class/Game.js~Game.html#instance-get-thermalVision",
+    "class/src/client/class/Game.js~Game.html#instance-set-thermalVision",
     "src/client/class/Game.js~Game#thermalVision",
     "member"
   ],
@@ -1170,6 +1500,78 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
+    "src/client/class/player.js",
+    "file/src/client/class/Player.js.html",
+    "src/client/class/Player.js",
+    "file"
+  ],
+  [
+    "src/client/class/player.js~player#pvpenabled",
+    "class/src/client/class/Player.js~Player.html#instance-get-PvPEnabled",
+    "src/client/class/Player.js~Player#PvPEnabled",
+    "member"
+  ],
+  [
+    "src/client/class/player.js~player#pvpenabled",
+    "class/src/client/class/Player.js~Player.html#instance-set-PvPEnabled",
+    "src/client/class/Player.js~Player#PvPEnabled",
+    "member"
+  ],
+  [
+    "src/client/class/player.js~player#spawn",
+    "class/src/client/class/Player.js~Player.html#instance-method-Spawn",
+    "src/client/class/Player.js~Player#Spawn",
+    "method"
+  ],
+  [
+    "src/client/class/player.js~player#constructor",
+    "class/src/client/class/Player.js~Player.html#instance-constructor-constructor",
+    "src/client/class/Player.js~Player#constructor",
+    "method"
+  ],
+  [
+    "src/client/class/player.js~player#id",
+    "class/src/client/class/Player.js~Player.html#instance-member-id",
+    "src/client/class/Player.js~Player#id",
+    "member"
+  ],
+  [
+    "src/client/class/player.js~player#isplaying",
+    "class/src/client/class/Player.js~Player.html#instance-get-isPlaying",
+    "src/client/class/Player.js~Player#isPlaying",
+    "member"
+  ],
+  [
+    "src/client/class/player.js~player#name",
+    "class/src/client/class/Player.js~Player.html#instance-get-name",
+    "src/client/class/Player.js~Player#name",
+    "member"
+  ],
+  [
+    "src/client/class/player.js~player#pvp",
+    "class/src/client/class/Player.js~Player.html#instance-member-pvp",
+    "src/client/class/Player.js~Player#pvp",
+    "member"
+  ],
+  [
+    "src/client/class/player.js~player#serverid",
+    "class/src/client/class/Player.js~Player.html#instance-get-serverId",
+    "src/client/class/Player.js~Player#serverId",
+    "member"
+  ],
+  [
+    "src/client/class/player.js~player#wantedlevel",
+    "class/src/client/class/Player.js~Player.html#instance-get-wantedLevel",
+    "src/client/class/Player.js~Player#wantedLevel",
+    "member"
+  ],
+  [
+    "src/client/class/player.js~player#wantedlevel",
+    "class/src/client/class/Player.js~Player.html#instance-set-wantedLevel",
+    "src/client/class/Player.js~Player#wantedLevel",
+    "member"
+  ],
+  [
     "src/client/class/vehicle.js",
     "file/src/client/class/Vehicle.js.html",
     "src/client/class/Vehicle.js",
@@ -1233,18 +1635,6 @@ window.esdocSearchIndex = [
     "src/client/class/vehicle.js~vehicle#getnumberdoors",
     "class/src/client/class/Vehicle.js~Vehicle.html#instance-method-GetNumberDoors",
     "src/client/class/Vehicle.js~Vehicle#GetNumberDoors",
-    "method"
-  ],
-  [
-    "src/client/class/vehicle.js~vehicle#getvehicleped",
-    "class/src/client/class/Vehicle.js~Vehicle.html#instance-method-GetVehiclePed",
-    "src/client/class/Vehicle.js~Vehicle#GetVehiclePed",
-    "method"
-  ],
-  [
-    "src/client/class/vehicle.js~vehicle#getwindowisintact",
-    "class/src/client/class/Vehicle.js~Vehicle.html#instance-method-GetWindowIsIntact",
-    "src/client/class/Vehicle.js~Vehicle#GetWindowIsIntact",
     "method"
   ],
   [
@@ -1567,13 +1957,13 @@ window.esdocSearchIndex = [
   ],
   [
     "src/client/class/vehicle.js~vehicle#bodyhealth",
-    "class/src/client/class/Vehicle.js~Vehicle.html#instance-set-bodyHealth",
+    "class/src/client/class/Vehicle.js~Vehicle.html#instance-get-bodyHealth",
     "src/client/class/Vehicle.js~Vehicle#bodyHealth",
     "member"
   ],
   [
     "src/client/class/vehicle.js~vehicle#bodyhealth",
-    "class/src/client/class/Vehicle.js~Vehicle.html#instance-get-bodyHealth",
+    "class/src/client/class/Vehicle.js~Vehicle.html#instance-set-bodyHealth",
     "src/client/class/Vehicle.js~Vehicle#bodyHealth",
     "member"
   ],
@@ -1596,20 +1986,14 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/client/class/vehicle.js~vehicle#constructor",
-    "class/src/client/class/Vehicle.js~Vehicle.html#instance-constructor-constructor",
-    "src/client/class/Vehicle.js~Vehicle#constructor",
-    "method"
-  ],
-  [
     "src/client/class/vehicle.js~vehicle#customtires",
-    "class/src/client/class/Vehicle.js~Vehicle.html#instance-set-customTires",
+    "class/src/client/class/Vehicle.js~Vehicle.html#instance-get-customTires",
     "src/client/class/Vehicle.js~Vehicle#customTires",
     "member"
   ],
   [
     "src/client/class/vehicle.js~vehicle#customtires",
-    "class/src/client/class/Vehicle.js~Vehicle.html#instance-get-customTires",
+    "class/src/client/class/Vehicle.js~Vehicle.html#instance-set-customTires",
     "src/client/class/Vehicle.js~Vehicle#customTires",
     "member"
   ],
@@ -1651,13 +2035,13 @@ window.esdocSearchIndex = [
   ],
   [
     "src/client/class/vehicle.js~vehicle#engineisrunning",
-    "class/src/client/class/Vehicle.js~Vehicle.html#instance-set-engineIsRunning",
+    "class/src/client/class/Vehicle.js~Vehicle.html#instance-get-engineIsRunning",
     "src/client/class/Vehicle.js~Vehicle#engineIsRunning",
     "member"
   ],
   [
     "src/client/class/vehicle.js~vehicle#engineisrunning",
-    "class/src/client/class/Vehicle.js~Vehicle.html#instance-get-engineIsRunning",
+    "class/src/client/class/Vehicle.js~Vehicle.html#instance-set-engineIsRunning",
     "src/client/class/Vehicle.js~Vehicle#engineIsRunning",
     "member"
   ],
@@ -1687,13 +2071,13 @@ window.esdocSearchIndex = [
   ],
   [
     "src/client/class/vehicle.js~vehicle#fuellevel",
-    "class/src/client/class/Vehicle.js~Vehicle.html#instance-set-fuelLevel",
+    "class/src/client/class/Vehicle.js~Vehicle.html#instance-get-fuelLevel",
     "src/client/class/Vehicle.js~Vehicle#fuelLevel",
     "member"
   ],
   [
     "src/client/class/vehicle.js~vehicle#fuellevel",
-    "class/src/client/class/Vehicle.js~Vehicle.html#instance-get-fuelLevel",
+    "class/src/client/class/Vehicle.js~Vehicle.html#instance-set-fuelLevel",
     "src/client/class/Vehicle.js~Vehicle#fuelLevel",
     "member"
   ],
@@ -1717,13 +2101,13 @@ window.esdocSearchIndex = [
   ],
   [
     "src/client/class/vehicle.js~vehicle#livery",
-    "class/src/client/class/Vehicle.js~Vehicle.html#instance-set-livery",
+    "class/src/client/class/Vehicle.js~Vehicle.html#instance-get-livery",
     "src/client/class/Vehicle.js~Vehicle#livery",
     "member"
   ],
   [
     "src/client/class/vehicle.js~vehicle#livery",
-    "class/src/client/class/Vehicle.js~Vehicle.html#instance-get-livery",
+    "class/src/client/class/Vehicle.js~Vehicle.html#instance-set-livery",
     "src/client/class/Vehicle.js~Vehicle#livery",
     "member"
   ],
@@ -1741,25 +2125,25 @@ window.esdocSearchIndex = [
   ],
   [
     "src/client/class/vehicle.js~vehicle#modcolor1",
-    "class/src/client/class/Vehicle.js~Vehicle.html#instance-set-modColor1",
-    "src/client/class/Vehicle.js~Vehicle#modColor1",
-    "member"
-  ],
-  [
-    "src/client/class/vehicle.js~vehicle#modcolor1",
     "class/src/client/class/Vehicle.js~Vehicle.html#instance-get-modColor1",
     "src/client/class/Vehicle.js~Vehicle#modColor1",
     "member"
   ],
   [
-    "src/client/class/vehicle.js~vehicle#modcolor2",
-    "class/src/client/class/Vehicle.js~Vehicle.html#instance-set-modColor2",
-    "src/client/class/Vehicle.js~Vehicle#modColor2",
+    "src/client/class/vehicle.js~vehicle#modcolor1",
+    "class/src/client/class/Vehicle.js~Vehicle.html#instance-set-modColor1",
+    "src/client/class/Vehicle.js~Vehicle#modColor1",
     "member"
   ],
   [
     "src/client/class/vehicle.js~vehicle#modcolor2",
     "class/src/client/class/Vehicle.js~Vehicle.html#instance-get-modColor2",
+    "src/client/class/Vehicle.js~Vehicle#modColor2",
+    "member"
+  ],
+  [
+    "src/client/class/vehicle.js~vehicle#modcolor2",
+    "class/src/client/class/Vehicle.js~Vehicle.html#instance-set-modColor2",
     "src/client/class/Vehicle.js~Vehicle#modColor2",
     "member"
   ],
@@ -1789,20 +2173,14 @@ window.esdocSearchIndex = [
   ],
   [
     "src/client/class/vehicle.js~vehicle#platestyle",
-    "class/src/client/class/Vehicle.js~Vehicle.html#instance-set-plateStyle",
-    "src/client/class/Vehicle.js~Vehicle#plateStyle",
-    "member"
-  ],
-  [
-    "src/client/class/vehicle.js~vehicle#platestyle",
     "class/src/client/class/Vehicle.js~Vehicle.html#instance-get-plateStyle",
     "src/client/class/Vehicle.js~Vehicle#plateStyle",
     "member"
   ],
   [
-    "src/client/class/vehicle.js~vehicle#platetext",
-    "class/src/client/class/Vehicle.js~Vehicle.html#instance-set-plateText",
-    "src/client/class/Vehicle.js~Vehicle#plateText",
+    "src/client/class/vehicle.js~vehicle#platestyle",
+    "class/src/client/class/Vehicle.js~Vehicle.html#instance-set-plateStyle",
+    "src/client/class/Vehicle.js~Vehicle#plateStyle",
     "member"
   ],
   [
@@ -1812,9 +2190,9 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/client/class/vehicle.js~vehicle#primarycolour",
-    "class/src/client/class/Vehicle.js~Vehicle.html#instance-set-primaryColour",
-    "src/client/class/Vehicle.js~Vehicle#primaryColour",
+    "src/client/class/vehicle.js~vehicle#platetext",
+    "class/src/client/class/Vehicle.js~Vehicle.html#instance-set-plateText",
+    "src/client/class/Vehicle.js~Vehicle#plateText",
     "member"
   ],
   [
@@ -1824,14 +2202,20 @@ window.esdocSearchIndex = [
     "member"
   ],
   [
-    "src/client/class/vehicle.js~vehicle#secondarycolour",
-    "class/src/client/class/Vehicle.js~Vehicle.html#instance-set-secondaryColour",
-    "src/client/class/Vehicle.js~Vehicle#secondaryColour",
+    "src/client/class/vehicle.js~vehicle#primarycolour",
+    "class/src/client/class/Vehicle.js~Vehicle.html#instance-set-primaryColour",
+    "src/client/class/Vehicle.js~Vehicle#primaryColour",
     "member"
   ],
   [
     "src/client/class/vehicle.js~vehicle#secondarycolour",
     "class/src/client/class/Vehicle.js~Vehicle.html#instance-get-secondaryColour",
+    "src/client/class/Vehicle.js~Vehicle#secondaryColour",
+    "member"
+  ],
+  [
+    "src/client/class/vehicle.js~vehicle#secondarycolour",
+    "class/src/client/class/Vehicle.js~Vehicle.html#instance-set-secondaryColour",
     "src/client/class/Vehicle.js~Vehicle#secondaryColour",
     "member"
   ],
@@ -1849,13 +2233,13 @@ window.esdocSearchIndex = [
   ],
   [
     "src/client/class/vehicle.js~vehicle#trailer",
-    "class/src/client/class/Vehicle.js~Vehicle.html#instance-set-trailer",
+    "class/src/client/class/Vehicle.js~Vehicle.html#instance-get-trailer",
     "src/client/class/Vehicle.js~Vehicle#trailer",
     "member"
   ],
   [
     "src/client/class/vehicle.js~vehicle#trailer",
-    "class/src/client/class/Vehicle.js~Vehicle.html#instance-get-trailer",
+    "class/src/client/class/Vehicle.js~Vehicle.html#instance-set-trailer",
     "src/client/class/Vehicle.js~Vehicle#trailer",
     "member"
   ],
@@ -1885,26 +2269,146 @@ window.esdocSearchIndex = [
   ],
   [
     "src/client/class/vehicle.js~vehicle#windowtint",
-    "class/src/client/class/Vehicle.js~Vehicle.html#instance-set-windowTint",
-    "src/client/class/Vehicle.js~Vehicle#windowTint",
-    "member"
-  ],
-  [
-    "src/client/class/vehicle.js~vehicle#windowtint",
     "class/src/client/class/Vehicle.js~Vehicle.html#instance-get-windowTint",
     "src/client/class/Vehicle.js~Vehicle#windowTint",
     "member"
   ],
   [
-    "src/client/class/vehicle.js~vehicle#windowsindex",
-    "class/src/client/class/Vehicle.js~Vehicle.html#instance-member-windowsIndex",
-    "src/client/class/Vehicle.js~Vehicle#windowsIndex",
+    "src/client/class/vehicle.js~vehicle#windowtint",
+    "class/src/client/class/Vehicle.js~Vehicle.html#instance-set-windowTint",
+    "src/client/class/Vehicle.js~Vehicle#windowTint",
+    "member"
+  ],
+  [
+    "src/client/class/world.js",
+    "file/src/client/class/World.js.html",
+    "src/client/class/World.js",
+    "file"
+  ],
+  [
+    "src/client/class/world.js~world#calculatetraveldistance",
+    "class/src/client/class/World.js~World.html#instance-method-CalculateTravelDistance",
+    "src/client/class/World.js~World#CalculateTravelDistance",
+    "method"
+  ],
+  [
+    "src/client/class/world.js~world#createmarker",
+    "class/src/client/class/World.js~World.html#instance-method-CreateMarker",
+    "src/client/class/World.js~World#CreateMarker",
+    "method"
+  ],
+  [
+    "src/client/class/world.js~world#deletemarker",
+    "class/src/client/class/World.js~World.html#instance-method-DeleteMArker",
+    "src/client/class/World.js~World#DeleteMArker",
+    "method"
+  ],
+  [
+    "src/client/class/world.js~world#getdistance",
+    "class/src/client/class/World.js~World.html#instance-method-GetDistance",
+    "src/client/class/World.js~World#GetDistance",
+    "method"
+  ],
+  [
+    "src/client/class/world.js~world#getgroundheight",
+    "class/src/client/class/World.js~World.html#instance-method-GetGroundHeight",
+    "src/client/class/World.js~World#GetGroundHeight",
+    "method"
+  ],
+  [
+    "src/client/class/world.js~world#togglemarker",
+    "class/src/client/class/World.js~World.html#instance-method-ToggleMarker",
+    "src/client/class/World.js~World#ToggleMarker",
+    "method"
+  ],
+  [
+    "src/client/class/world.js~world#transitiontoweather",
+    "class/src/client/class/World.js~World.html#instance-method-TransitionToWeather",
+    "src/client/class/World.js~World#TransitionToWeather",
+    "method"
+  ],
+  [
+    "src/client/class/world.js~world#blackout",
+    "class/src/client/class/World.js~World.html#instance-set-blackout",
+    "src/client/class/World.js~World#blackout",
+    "member"
+  ],
+  [
+    "src/client/class/world.js~world#cloudhat",
+    "class/src/client/class/World.js~World.html#instance-get-cloudHat",
+    "src/client/class/World.js~World#cloudHat",
+    "member"
+  ],
+  [
+    "src/client/class/world.js~world#cloudhat",
+    "class/src/client/class/World.js~World.html#instance-set-cloudHat",
+    "src/client/class/World.js~World#cloudHat",
+    "member"
+  ],
+  [
+    "src/client/class/world.js~world#cloudhatopacity",
+    "class/src/client/class/World.js~World.html#instance-get-cloudHatOpacity",
+    "src/client/class/World.js~World#cloudHatOpacity",
+    "member"
+  ],
+  [
+    "src/client/class/world.js~world#cloudhatopacity",
+    "class/src/client/class/World.js~World.html#instance-set-cloudHatOpacity",
+    "src/client/class/World.js~World#cloudHatOpacity",
+    "member"
+  ],
+  [
+    "src/client/class/world.js~world#currentcloudhat",
+    "class/src/client/class/World.js~World.html#instance-member-currentCloudHat",
+    "src/client/class/World.js~World#currentCloudHat",
+    "member"
+  ],
+  [
+    "src/client/class/world.js~world#currentdate",
+    "class/src/client/class/World.js~World.html#instance-get-currentDate",
+    "src/client/class/World.js~World#currentDate",
+    "member"
+  ],
+  [
+    "src/client/class/world.js~world#currentdate",
+    "class/src/client/class/World.js~World.html#instance-set-currentDate",
+    "src/client/class/World.js~World#currentDate",
+    "member"
+  ],
+  [
+    "src/client/class/world.js~world#newtweather",
+    "class/src/client/class/World.js~World.html#instance-get-newtWeather",
+    "src/client/class/World.js~World#newtWeather",
+    "member"
+  ],
+  [
+    "src/client/class/world.js~world#newtweather",
+    "class/src/client/class/World.js~World.html#instance-set-newtWeather",
+    "src/client/class/World.js~World#newtWeather",
+    "member"
+  ],
+  [
+    "src/client/class/world.js~world#weather",
+    "class/src/client/class/World.js~World.html#instance-get-weather",
+    "src/client/class/World.js~World#weather",
+    "member"
+  ],
+  [
+    "src/client/class/world.js~world#weather",
+    "class/src/client/class/World.js~World.html#instance-set-weather",
+    "src/client/class/World.js~World#weather",
     "member"
   ],
   [
     "src/client/enum/audioflag.js",
     "file/src/client/enum/AudioFlag.js.html",
     "src/client/enum/AudioFlag.js",
+    "file"
+  ],
+  [
+    "src/client/enum/cloudhat.js",
+    "file/src/client/enum/CloudHat.js.html",
+    "src/client/enum/CloudHat.js",
     "file"
   ],
   [
@@ -1938,6 +2442,24 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
+    "src/client/enum/styleenum.js",
+    "file/src/client/enum/StyleEnum.js.html",
+    "src/client/enum/StyleEnum.js",
+    "file"
+  ],
+  [
+    "src/client/enum/vehicle.js",
+    "file/src/client/enum/Vehicle.js.html",
+    "src/client/enum/Vehicle.js",
+    "file"
+  ],
+  [
+    "src/client/enum/weather.js",
+    "file/src/client/enum/Weather.js.html",
+    "src/client/enum/Weather.js",
+    "file"
+  ],
+  [
     "src/client/events/onplayerspawn.js",
     "file/src/client/events/OnPlayerSpawn.js.html",
     "src/client/events/OnPlayerSpawn.js",
@@ -1948,6 +2470,90 @@ window.esdocSearchIndex = [
     "file/src/client/events/OnSessionStarted.js.html",
     "src/client/events/OnSessionStarted.js",
     "file"
+  ],
+  [
+    "src/common/utils/color.js",
+    "file/src/common/utils/Color.js.html",
+    "src/common/utils/Color.js",
+    "file"
+  ],
+  [
+    "src/common/utils/color.js~color#rgbatohexa",
+    "class/src/common/utils/Color.js~Color.html#instance-method-RGBAToHexA",
+    "src/common/utils/Color.js~Color#RGBAToHexA",
+    "method"
+  ],
+  [
+    "src/common/utils/color.js~color#rgbtohex",
+    "class/src/common/utils/Color.js~Color.html#instance-method-RGBToHex",
+    "src/common/utils/Color.js~Color#RGBToHex",
+    "method"
+  ],
+  [
+    "src/common/utils/color.js~color#a",
+    "class/src/common/utils/Color.js~Color.html#instance-member-a",
+    "src/common/utils/Color.js~Color#a",
+    "member"
+  ],
+  [
+    "src/common/utils/color.js~color#alpha",
+    "class/src/common/utils/Color.js~Color.html#instance-member-alpha",
+    "src/common/utils/Color.js~Color#alpha",
+    "member"
+  ],
+  [
+    "src/common/utils/color.js~color#b",
+    "class/src/common/utils/Color.js~Color.html#instance-member-b",
+    "src/common/utils/Color.js~Color#b",
+    "member"
+  ],
+  [
+    "src/common/utils/color.js~color#blue",
+    "class/src/common/utils/Color.js~Color.html#instance-member-blue",
+    "src/common/utils/Color.js~Color#blue",
+    "member"
+  ],
+  [
+    "src/common/utils/color.js~color#constructor",
+    "class/src/common/utils/Color.js~Color.html#instance-constructor-constructor",
+    "src/common/utils/Color.js~Color#constructor",
+    "method"
+  ],
+  [
+    "src/common/utils/color.js~color#g",
+    "class/src/common/utils/Color.js~Color.html#instance-member-g",
+    "src/common/utils/Color.js~Color#g",
+    "member"
+  ],
+  [
+    "src/common/utils/color.js~color#green",
+    "class/src/common/utils/Color.js~Color.html#instance-member-green",
+    "src/common/utils/Color.js~Color#green",
+    "member"
+  ],
+  [
+    "src/common/utils/color.js~color#hexatorgba",
+    "class/src/common/utils/Color.js~Color.html#instance-method-hexAToRGBA",
+    "src/common/utils/Color.js~Color#hexAToRGBA",
+    "method"
+  ],
+  [
+    "src/common/utils/color.js~color#hextorgb",
+    "class/src/common/utils/Color.js~Color.html#instance-method-hexToRGB",
+    "src/common/utils/Color.js~Color#hexToRGB",
+    "method"
+  ],
+  [
+    "src/common/utils/color.js~color#r",
+    "class/src/common/utils/Color.js~Color.html#instance-member-r",
+    "src/common/utils/Color.js~Color#r",
+    "member"
+  ],
+  [
+    "src/common/utils/color.js~color#red",
+    "class/src/common/utils/Color.js~Color.html#instance-member-red",
+    "src/common/utils/Color.js~Color#red",
+    "member"
   ],
   [
     "src/common/utils/enum.js",

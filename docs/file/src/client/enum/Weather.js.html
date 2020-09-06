@@ -2,8 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <base data-ice="baseUrl">
-  <title data-ice="title">Home | @fivemtools/ft_core</title>
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">src/client/enum/Weather.js | @fivemtools/ft_core</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -65,24 +65,26 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="ft-core">ft_core</h1><p>To create resources on FiveM</p>
-<h3 id="prerequisites">Prerequisites</h3><ul>
-<li><a href="https://nodejs.org/">Nodejs</a></li>
-</ul>
-<h3 id="installing">Installing</h3><p>Copy <code>exemple</code> directory and rename to <code>ft_exemple</code>.</p>
-<p>Last add, into the server.cfg file :</p>
-<pre><code><code class="source-code prettyprint">    start ft_exemple</code>
-</code></pre><h3 id="documentation">Documentation</h3><ul>
-<li>Online : <a href="https://ft_core.fivem.tools">https://ft_core.fivem.tools</a></li>
-<li>Local : <code>docs</code> directory (github)</li>
-</ul>
-<h2 id="license">License</h2><p>This project is licensed under the GNU General Public License v3.0 - see the <a href="LICENSE">LICENSE</a> file for details</p>
-<h2 id="contributors--">Contributors :</h2><ul>
-<li>Samuelds</li>
-<li>THEJean-Kevin</li>
-<li>LH-Lawliet</li>
-</ul>
-</div>
+<div class="content" data-ice="content"><h1 data-ice="title">src/client/enum/Weather.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">const Weather = new Enum({
+    &quot;Unknown&quot;: -1,
+    &quot;ExtraSunny&quot;: &apos;EXTRASUNNY&apos;,
+    &quot;Clear&quot;: &apos;CLEAR&apos;,
+    &quot;Clouds&quot;: &apos;CLOUDS&apos;,
+    &quot;Smog&quot;: &apos;SMOG&apos;,
+    &quot;Foggy&quot;: &apos;FOGGY&apos;,
+    &quot;Overcast&quot;: &apos;OVERCAST&apos;,
+    &quot;Raining&quot;: &apos;RAIN&apos;,
+    &quot;ThunderStorm&quot;: &apos;THUNDER&apos;,
+    &quot;Clearing&quot;: &apos;CLEARING&apos;,
+    &quot;Neutral&quot;: &apos;NEUTRAL&apos;,
+    &quot;Snowing&quot;: &apos;SNOW&apos;,
+    &quot;Blizzard&quot;: &apos;BLIZZARD&apos;,
+    &quot;Snowlight&quot;: &apos;SNOWLIGHT&apos;,
+    &quot;Christmas&quot;: &apos;XMAS&apos;,
+    &quot;Halloween&quot;: &quot;HALLOWEEN&quot;,
+})</code></pre>
+
 </div>
 
 <footer class="footer">

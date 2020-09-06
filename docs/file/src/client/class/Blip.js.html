@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">src/client/class/Blip.js | @fivemtools/ft_core</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  <script src="script/manual.js"></script>
+<meta name="description" content="Libs for Fivem"><meta property="twitter:card" content="summary"><meta property="twitter:title" content="@fivemtools/ft_core"><meta property="twitter:description" content="Libs for Fivem"></head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+<a style="position:relative; top:3px;" href="https://github.com/FivemTools/ft_core"><img width="20px" src="./image/github.png"></a></header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#client-class">client/class</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/client/class/Audio.js~Audio.html">Audio</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/client/class/Blip.js~Blip.html">Blip</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/client/class/Entity.js~Entity.html">Entity</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/client/class/Game.js~Game.html">Game</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/client/class/Ped.js~Ped.html">Ped</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/client/class/Player.js~Player.html">Player</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/client/class/Vehicle.js~Vehicle.html">Vehicle</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/client/class/World.js~World.html">World</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-_MarkerList">_MarkerList</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#client-enum">client/enum</a><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-AudioFlag">AudioFlag</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-CloudHat">CloudHat</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Control">Control</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-InputMode">InputMode</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-DrivingStyle">DrivingStyle</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-VehicleDrivingFlags">VehicleDrivingFlags</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-HelmetType">HelmetType</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Languages">Languages</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-RagdollType">RagdollType</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-FaceEnum">FaceEnum</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-HeadAppearanceEnum">HeadAppearanceEnum</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-PedComponents">PedComponents</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-PedProps">PedProps</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-VehicleSeat">VehicleSeat</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-Weather">Weather</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#client-events">client/events</a><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-OnPlayerSpawn">OnPlayerSpawn</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-OnSessionStarted">OnSessionStarted</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-_onSpawn">_onSpawn</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-_OnSessionStartedTimer">_OnSessionStartedTimer</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-_onSessionStarted">_onSessionStarted</a></span></span></li>
+<li data-ice="doc"><a data-ice="dirPath" class="nav-dir-path" href="identifiers.html#common-utils">common/utils</a><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/common/utils/Color.js~Color.html">Color</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/src/common/utils/Vector3.js~Vector3.html">Vector3</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-Enum">Enum</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">src/client/class/Blip.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">/*
+ * @Project: FiveM Tools
+ * @Authors: Samuelds, THEJean_Kevin
+ * @License: GNU General Public License v3.0
+ * @Source: https://github.com/FivemTools/ft_core
+*/
+
+// https://docs.fivem.net/game-references/blips/
+class Blip {
+
+    /**
+     * @description Create new blip for Coord
+     * @param {Vector3} vector3 
+     * @param {Object} data
+     * @returns {Number} id
+     */
+    NewBlipForCoord(vector3, data) {
+        this.id = AddBlipForCoord(vector3.x, vector3.y, vector3.z);
+        this.updateData(data);
+        return this.id;
+    }
+
+    /**
+     * @description Create new blip for Areal
+     * @param {Vector3} vector3 center of the area
+     * @param {Number} width
+     * @param {Number} height 
+     * @param {Object} data
+     * @returns {Number} id 
+     */
+    NewBlipForArea(vector3, width = 1, height = 1, data) {
+        this.id = AddBlipForArea(vector3.x, vector3.y, vector3.z, width, height);
+        this.updateData(data);
+        return this.id;
+    }
+
+    /**
+     * @description Create a blip for Enity
+     * @param {Entity} entity 
+     * @param {Object} data 
+     * @returns {Number} id 
+     */
+
+    NewBlipForEntity(entity, data) {
+        this.id = AddBlipForEntity(entity.id);
+        this.updateData(data);
+        return this.id;
+    }
+
+    /**
+     * @description Create new blip for Radius
+     * @param {Vector3} vector3 
+     * @param {Number} radius 
+     * @param {Object} data
+     * @returns {Number} id  
+     */
+    NewBlipForRadius(vector3, radius = 1, data) {
+        this.id = AddBlipForRadius(vector3.x, vector3.y, vector3.z, radius);
+        this.updateData(data);
+        return this.id;
+    }
+
+    /**
+     * @description Create new blip for pickup
+     * @param {number} pickup
+     * @param {Object} data
+     * @returns {Number} id  
+     */
+    NewBlipForPickup(pickup, data) {
+        this.id = AddBlipForPickup(pickup);
+        this.updateData(data);
+        return this.id;
+    }
+
+    /**
+     * @description Get the blip from an Entity
+     * @param {Entity} entity
+     */
+    BlipFromEntity(entity) {
+        return GetBlipFromEntity(entity.id);
+    }
+
+    /**
+     * @description Gets the position of this blip
+     * @returns {Vector3}
+     */
+    get coord() {
+        return GetBlipInfoIdCoord(this.id);
+    }
+
+    /**
+    * @description Set the position of this blip
+    * @param {Vector3} vector3
+    */
+    set coord(vector3) {
+        SetBlipCoords(this.id, vector3.x, vector3.y, vector3.z);
+    }
+
+    /**
+     * @description Set the rotation of this on the map.
+     * @param {Number} value
+     */
+    set rotation(value) {
+        SetBlipRotation(this.id, value);
+        this._rotation = value;
+    }
+
+    /**
+     * @description Get the scale of this on the ma
+     * @return {Number}
+     */
+    get scale() {
+        return this._scale;
+    }
+
+    /**
+     * @description Set the scale of this on the ma
+     * @param {Number} size
+     */
+    set scale(size) {
+        SetBlipScale(this.id, size);
+        this._scale = taille;
+    }
+
+    /**
+     * @description Gets the type of this
+     * @return {Number}
+     */
+    get type() {
+        return GetBlipInfoIdType(this.id);
+    }
+
+    /**
+     * @description Gets the alpha of this on the map.
+     * @return {Number}
+     */
+    get alpha() {
+        return GetBlipAlpha(this.id);
+    }
+
+    /**
+     * @description Sets the alpha of this on the map.
+     * @param {Number} value
+     */
+    set alpha(value) {
+        SetBlipAlpha(this.id, value);
+    }
+
+    /**
+     * @description Turns on the &quot;cone view&quot; that are used for guards for example. Not sure what the values for priority do.
+     * @param {Number} value Possible values : 9, 7, 6, 5, 3, 2
+     * 
+     */
+    set priority(value) {
+        SetBlipPriority(this.id, value);
+    }
+
+    /**
+     * @description Sets this label to the given number.
+     * @param {Number} value
+     */
+    set numberLabel(value) {
+        ShowNumberOnBlip(this.id, value);
+    }
+
+    /**
+     * @description Removes the number label for this blip
+     */
+    RemoveNumberLabel() {
+        HideNumberOnBlip(this.id);
+    }
+
+    /**
+     * @description Gets the color of this
+     * @return {Number}
+     */
+    get color() {
+        return GetBlipColour(this.id);
+    }
+
+    /**
+     * @description Set the color of this
+     * @param {Number} value https://runtime.fivem.net/doc/natives/#_0x03D7FB09E75D6B7E
+     */
+    set color(value) {
+        SetBlipColour(this.id, value);
+    }
+
+    /**
+     * @description Gets the sprite of this
+     * @return {Number}
+     */
+    get sprite() {
+        return GetBlipSprite(this.id);
+    }
+
+    /**
+     * @description Set the sprite of this
+     * @param {Number} value
+     */
+    set sprite(value) {
+        SetBlipSprite(this.id, value);
+    }
+
+    /**
+     * @description Set the name of this
+     * @param {string} name
+     */
+    set name(name) {
+        BeginTextCommandSetBlipName(&quot;STRING&quot;);
+        AddTextComponentSubstringPlayerName(name);
+        EndTextCommandSetBlipName(this.id);
+        this._name = name;
+    }
+
+    /**
+     * @description Get the name of this
+     * @return {string}
+     */
+    get name() {
+        return this._name;
+    }
+
+    /**
+     *@description Gets the Entity of this blip is attached to.
+     * @returns {Entity}
+     */
+    get entity() {
+        return new Entity(GetBlipInfoIdEntityIndex(this.id));
+    }
+
+    /**
+     * @description Sets a value indicating whether the route to this blip should be shown on the map.
+     * @param {Boolean} value
+     */
+    ShowRoute(value) {
+        SetBlipRoute(this.id, value);
+    }
+
+    /**
+     * @description Sets a value indicating whether this blip is friendly
+     * @param {Boolean} value false for enemy | true for friendly
+     */
+    IsFriendly(value) {
+        SetBlipAsFriendly(this.id, value);
+    }
+
+    /**
+     * @description Sets a value indicating whether this (Player) blip is a friend. Toggles a half cyan circle on the right side.
+     * @param {Boolean} value
+     */
+    IsFriend(value) {
+        ShowFriendIndicatorOnBlip(this.id, value);
+    }
+
+    /**
+     * @description Sets a value indicating whether this (Player) blip is a CREW member. Toggles a half cyan circle on the left side.
+     * @param {Boolean} value
+     */
+    IsCrew(value) {
+        ShowCrewIndicatorOnBlip(this.id, value);
+    }
+
+    /**
+     * @description Toggles a cyan outline around the blip. Enabling this circle will override the &quot;crew&quot; and &quot;friend&quot; half-circles
+     * @param {Boolean} value
+     */
+    IsFriendCrew(value) {
+        ShowOutlineIndicatorOnBlip(this.id, value);
+    }
+
+    /**
+     * @description Set the circle color
+     * @param {Color} color
+     */
+    set secondaryColor(color) {
+        SetBlipSecondaryColour(this.id, color.r, color.g, color.b);
+    }
+
+    /**
+     * @description Gets a value indicating whether this blip is flashing.
+     * @param {boolean} value
+     */
+    set isFlashing(value) {
+        SetBlipFlashes(this.id, value);
+    }
+
+    /**
+     * @description Sets a value indicating whether this blip is flashing.
+     * @return {boolean}
+     */
+    get isFlashing() {
+        return IsBlipFlashing(this.id);
+    }
+
+    /**
+     * @description Gets a value indicating whether this blip is on minimap.
+     * @returns {boolean}
+     */
+    get isOnMinimap() {
+        return IsBlipOnMinimap(this.id);
+    }
+
+    /**
+     * @description Gets a value indicating whether this blip is short range.
+     * @return {boolean}
+     */
+    get isShortRange() {
+        return IsBlipShortRange(this.id);
+    }
+
+    /**
+     * @description Set a value indicating whether this blip is short range.
+     * @param {boolean} value
+     */
+    set isShortRange(value) {
+        SetBlipAsShortRange(this.id, value);
+    }
+
+    /**
+     * @description Remove this blip
+     */
+    Delete() {
+        if (DoesBlipExist(this.id)) {
+            RemoveBlip(this.id);
+        }
+    }
+
+    /**
+     * @description Check if the blip exist
+     * @returns {boolean}
+     */
+    Exist() {
+        return DoesBlipExist(this.id);
+    }
+
+    /**
+     * @description Get where blip is displayed
+     * @return {Number} value possible value : 0=Doesn&apos;t show up, ever, anywhere |2 = Shows on both main map and minimap. (Selectable on map) | 3 = Shows on main map only. (Selectable on map) | 5 = Shows on minimap only. |8 = Shows on both main map and minimap. (Not selectable on map)
+     */
+    get display() {
+        return GetBlipInfoIdDisplay(this.id);
+    }
+
+    /**
+     * @description Set where blip is displayed
+     * @param {Number} value possible value : 0=Doesn&apos;t show up, ever, anywhere |2 = Shows on both main map and minimap. (Selectable on map) | 3 = Shows on main map only. (Selectable on map) | 5 = Shows on minimap only. |8 = Shows on both main map and minimap. (Not selectable on map)
+     */
+    set display(value) {
+        SetBlipDisplay(this.id, value);
+    }
+
+    /**
+     * @description Update information of this blip
+     * @param {Object} data {sprite,name,scale,display,color,alpha,coord,rotation,priority,numberLabel,showRoute,isFriend,isCrew,secondaryColor,isFlashing,isShortRange} 
+     */
+    UpdateData(data) {
+        Object.keys(data).forEach(e =&gt; {
+            switch (e) {
+                case &quot;sprite&quot;:
+                    this.sprite = data.sprite;
+                    break;
+                case &quot;name&quot;:
+                    this.name = data.name;
+                    break;
+                case &quot;scale&quot;:
+                    this.scale = data.scale;
+                    break;
+                case &quot;display&quot;:
+                    this.display = data.display;
+                    break;
+                case &quot;color&quot;:
+                    this.color = data.color;
+                    break;
+                case &quot;alpha&quot;:
+                    this.alpha = data.alpha;
+                    break;
+                case &apos;coord&apos;:
+                    this.coord = data.coord;
+                    break;
+                case &apos;rotation&apos;:
+                    this.rotation = data.rotation;
+                    break;
+                case &apos;priority&apos;:
+                    this.priority = data.priority;
+                    break;
+                case &apos;numberLabel&apos;:
+                    this.numberLabel = data.numberLabel;
+                    break;
+                case &apos;showRoute&apos;:
+                    this.ShowRoute(data.showRoute);
+                    break;
+                case &apos;isFriend&apos;:
+                    this.IsFriend(data.isFriend);
+                    break;
+                case &apos;isCrew&apos;:
+                    this.IsCrew(data.isCrew);
+                    break;
+                case &apos;secondaryColor&apos;:
+                    this.secondaryColor = data.secondaryColor;
+                    break;
+                case &apos;isFlashing&apos;:
+                    this.isFlashing = data.isFlashing;
+                    break;
+                case &apos;isShortRange&apos;:
+                    this.isShortRange = data.isShortRange;
+                    break;
+                default:
+                    break;
+            }
+        })
+    }
+
+}</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(1.1.0)</span><img src="./image/esdoc-logo-mini-black.png"></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

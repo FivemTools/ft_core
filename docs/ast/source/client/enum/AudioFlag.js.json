@@ -1,7 +1,7 @@
 {
   "type": "File",
   "start": 0,
-  "end": 1353,
+  "end": 1352,
   "loc": {
     "start": {
       "line": 1,
@@ -15,7 +15,7 @@
   "program": {
     "type": "Program",
     "start": 0,
-    "end": 1353,
+    "end": 1352,
     "loc": {
       "start": {
         "line": 1,
@@ -30,8 +30,8 @@
     "body": [
       {
         "type": "VariableDeclaration",
-        "start": 156,
-        "end": 1353,
+        "start": 155,
+        "end": 1352,
         "loc": {
           "start": {
             "line": 8,
@@ -45,8 +45,8 @@
         "declarations": [
           {
             "type": "VariableDeclarator",
-            "start": 162,
-            "end": 1352,
+            "start": 161,
+            "end": 1351,
             "loc": {
               "start": {
                 "line": 8,
@@ -59,8 +59,8 @@
             },
             "id": {
               "type": "Identifier",
-              "start": 162,
-              "end": 171,
+              "start": 161,
+              "end": 170,
               "loc": {
                 "start": {
                   "line": 8,
@@ -77,8 +77,8 @@
             },
             "init": {
               "type": "NewExpression",
-              "start": 174,
-              "end": 1352,
+              "start": 173,
+              "end": 1351,
               "loc": {
                 "start": {
                   "line": 8,
@@ -91,8 +91,8 @@
               },
               "callee": {
                 "type": "Identifier",
-                "start": 178,
-                "end": 182,
+                "start": 177,
+                "end": 181,
                 "loc": {
                   "start": {
                     "line": 8,
@@ -109,8 +109,8 @@
               "arguments": [
                 {
                   "type": "ArrayExpression",
-                  "start": 183,
-                  "end": 1351,
+                  "start": 182,
+                  "end": 1350,
                   "loc": {
                     "start": {
                       "line": 8,
@@ -124,8 +124,8 @@
                   "elements": [
                     {
                       "type": "StringLiteral",
-                      "start": 190,
-                      "end": 216,
+                      "start": 189,
+                      "end": 215,
                       "loc": {
                         "start": {
                           "line": 9,
@@ -144,8 +144,8 @@
                     },
                     {
                       "type": "StringLiteral",
-                      "start": 223,
-                      "end": 252,
+                      "start": 222,
+                      "end": 251,
                       "loc": {
                         "start": {
                           "line": 10,
@@ -164,8 +164,8 @@
                     },
                     {
                       "type": "StringLiteral",
-                      "start": 259,
-                      "end": 287,
+                      "start": 258,
+                      "end": 286,
                       "loc": {
                         "start": {
                           "line": 11,
@@ -184,8 +184,8 @@
                     },
                     {
                       "type": "StringLiteral",
-                      "start": 294,
-                      "end": 341,
+                      "start": 293,
+                      "end": 340,
                       "loc": {
                         "start": {
                           "line": 12,
@@ -204,8 +204,8 @@
                     },
                     {
                       "type": "StringLiteral",
-                      "start": 348,
-                      "end": 372,
+                      "start": 347,
+                      "end": 371,
                       "loc": {
                         "start": {
                           "line": 13,
@@ -224,8 +224,8 @@
                     },
                     {
                       "type": "StringLiteral",
-                      "start": 379,
-                      "end": 421,
+                      "start": 378,
+                      "end": 420,
                       "loc": {
                         "start": {
                           "line": 14,
@@ -244,8 +244,8 @@
                     },
                     {
                       "type": "StringLiteral",
-                      "start": 428,
-                      "end": 452,
+                      "start": 427,
+                      "end": 451,
                       "loc": {
                         "start": {
                           "line": 15,
@@ -264,8 +264,8 @@
                     },
                     {
                       "type": "StringLiteral",
-                      "start": 459,
-                      "end": 485,
+                      "start": 458,
+                      "end": 484,
                       "loc": {
                         "start": {
                           "line": 16,
@@ -284,8 +284,8 @@
                     },
                     {
                       "type": "StringLiteral",
-                      "start": 492,
-                      "end": 512,
+                      "start": 491,
+                      "end": 511,
                       "loc": {
                         "start": {
                           "line": 17,
@@ -304,8 +304,8 @@
                     },
                     {
                       "type": "StringLiteral",
-                      "start": 519,
-                      "end": 548,
+                      "start": 518,
+                      "end": 547,
                       "loc": {
                         "start": {
                           "line": 18,
@@ -324,8 +324,8 @@
                     },
                     {
                       "type": "StringLiteral",
-                      "start": 555,
-                      "end": 582,
+                      "start": 554,
+                      "end": 581,
                       "loc": {
                         "start": {
                           "line": 19,
@@ -344,8 +344,8 @@
                     },
                     {
                       "type": "StringLiteral",
-                      "start": 589,
-                      "end": 632,
+                      "start": 588,
+                      "end": 631,
                       "loc": {
                         "start": {
                           "line": 20,
@@ -364,8 +364,8 @@
                     },
                     {
                       "type": "StringLiteral",
-                      "start": 639,
-                      "end": 675,
+                      "start": 638,
+                      "end": 674,
                       "loc": {
                         "start": {
                           "line": 21,
@@ -384,8 +384,8 @@
                     },
                     {
                       "type": "StringLiteral",
-                      "start": 682,
-                      "end": 696,
+                      "start": 681,
+                      "end": 695,
                       "loc": {
                         "start": {
                           "line": 22,
@@ -404,8 +404,8 @@
                     },
                     {
                       "type": "StringLiteral",
-                      "start": 703,
-                      "end": 723,
+                      "start": 702,
+                      "end": 722,
                       "loc": {
                         "start": {
                           "line": 23,
@@ -424,8 +424,8 @@
                     },
                     {
                       "type": "StringLiteral",
-                      "start": 730,
-                      "end": 766,
+                      "start": 729,
+                      "end": 765,
                       "loc": {
                         "start": {
                           "line": 24,
@@ -444,8 +444,8 @@
                     },
                     {
                       "type": "StringLiteral",
-                      "start": 773,
-                      "end": 792,
+                      "start": 772,
+                      "end": 791,
                       "loc": {
                         "start": {
                           "line": 25,
@@ -464,8 +464,8 @@
                     },
                     {
                       "type": "StringLiteral",
-                      "start": 799,
-                      "end": 827,
+                      "start": 798,
+                      "end": 826,
                       "loc": {
                         "start": {
                           "line": 26,
@@ -484,8 +484,8 @@
                     },
                     {
                       "type": "StringLiteral",
-                      "start": 834,
-                      "end": 860,
+                      "start": 833,
+                      "end": 859,
                       "loc": {
                         "start": {
                           "line": 27,
@@ -504,8 +504,8 @@
                     },
                     {
                       "type": "StringLiteral",
-                      "start": 867,
-                      "end": 885,
+                      "start": 866,
+                      "end": 884,
                       "loc": {
                         "start": {
                           "line": 28,
@@ -524,8 +524,8 @@
                     },
                     {
                       "type": "StringLiteral",
-                      "start": 892,
-                      "end": 915,
+                      "start": 891,
+                      "end": 914,
                       "loc": {
                         "start": {
                           "line": 29,
@@ -544,8 +544,8 @@
                     },
                     {
                       "type": "StringLiteral",
-                      "start": 922,
-                      "end": 955,
+                      "start": 921,
+                      "end": 954,
                       "loc": {
                         "start": {
                           "line": 30,
@@ -564,8 +564,8 @@
                     },
                     {
                       "type": "StringLiteral",
-                      "start": 962,
-                      "end": 984,
+                      "start": 961,
+                      "end": 983,
                       "loc": {
                         "start": {
                           "line": 31,
@@ -584,8 +584,8 @@
                     },
                     {
                       "type": "StringLiteral",
-                      "start": 991,
-                      "end": 1019,
+                      "start": 990,
+                      "end": 1018,
                       "loc": {
                         "start": {
                           "line": 32,
@@ -604,8 +604,8 @@
                     },
                     {
                       "type": "StringLiteral",
-                      "start": 1026,
-                      "end": 1050,
+                      "start": 1025,
+                      "end": 1049,
                       "loc": {
                         "start": {
                           "line": 33,
@@ -624,8 +624,8 @@
                     },
                     {
                       "type": "StringLiteral",
-                      "start": 1057,
-                      "end": 1069,
+                      "start": 1056,
+                      "end": 1068,
                       "loc": {
                         "start": {
                           "line": 34,
@@ -644,8 +644,8 @@
                     },
                     {
                       "type": "StringLiteral",
-                      "start": 1076,
-                      "end": 1095,
+                      "start": 1075,
+                      "end": 1094,
                       "loc": {
                         "start": {
                           "line": 35,
@@ -664,8 +664,8 @@
                     },
                     {
                       "type": "StringLiteral",
-                      "start": 1102,
-                      "end": 1139,
+                      "start": 1101,
+                      "end": 1138,
                       "loc": {
                         "start": {
                           "line": 36,
@@ -684,8 +684,8 @@
                     },
                     {
                       "type": "StringLiteral",
-                      "start": 1146,
-                      "end": 1161,
+                      "start": 1145,
+                      "end": 1160,
                       "loc": {
                         "start": {
                           "line": 37,
@@ -704,8 +704,8 @@
                     },
                     {
                       "type": "StringLiteral",
-                      "start": 1168,
-                      "end": 1191,
+                      "start": 1167,
+                      "end": 1190,
                       "loc": {
                         "start": {
                           "line": 38,
@@ -724,8 +724,8 @@
                     },
                     {
                       "type": "StringLiteral",
-                      "start": 1198,
-                      "end": 1228,
+                      "start": 1197,
+                      "end": 1227,
                       "loc": {
                         "start": {
                           "line": 39,
@@ -744,8 +744,8 @@
                     },
                     {
                       "type": "StringLiteral",
-                      "start": 1235,
-                      "end": 1253,
+                      "start": 1234,
+                      "end": 1252,
                       "loc": {
                         "start": {
                           "line": 40,
@@ -764,8 +764,8 @@
                     },
                     {
                       "type": "StringLiteral",
-                      "start": 1260,
-                      "end": 1290,
+                      "start": 1259,
+                      "end": 1289,
                       "loc": {
                         "start": {
                           "line": 41,
@@ -784,8 +784,8 @@
                     },
                     {
                       "type": "StringLiteral",
-                      "start": 1297,
-                      "end": 1318,
+                      "start": 1296,
+                      "end": 1317,
                       "loc": {
                         "start": {
                           "line": 42,
@@ -804,8 +804,8 @@
                     },
                     {
                       "type": "StringLiteral",
-                      "start": 1325,
-                      "end": 1347,
+                      "start": 1324,
+                      "end": 1346,
                       "loc": {
                         "start": {
                           "line": 43,
@@ -833,9 +833,9 @@
         "leadingComments": [
           {
             "type": "CommentBlock",
-            "value": "*\r\n * @Project: FivemTools\r\n * @Author: Samuelds\r\n * @License: GNU General Public License v3.0\r\n * @Source: https://github.com/FivemTools/ft_core\r\n ",
+            "value": "\r\n * @Project: FiveM Tools\r\n * @Author: Samuelds\r\n * @License: GNU General Public License v3.0\r\n * @Source: https://github.com/FivemTools/ft_core\r\n",
             "start": 0,
-            "end": 152,
+            "end": 151,
             "loc": {
               "start": {
                 "line": 1,
@@ -843,7 +843,7 @@
               },
               "end": {
                 "line": 6,
-                "column": 3
+                "column": 2
               }
             }
           }
@@ -855,9 +855,9 @@
   "comments": [
     {
       "type": "CommentBlock",
-      "value": "*\r\n * @Project: FivemTools\r\n * @Author: Samuelds\r\n * @License: GNU General Public License v3.0\r\n * @Source: https://github.com/FivemTools/ft_core\r\n ",
+      "value": "\r\n * @Project: FiveM Tools\r\n * @Author: Samuelds\r\n * @License: GNU General Public License v3.0\r\n * @Source: https://github.com/FivemTools/ft_core\r\n",
       "start": 0,
-      "end": 152,
+      "end": 151,
       "loc": {
         "start": {
           "line": 1,
@@ -865,7 +865,7 @@
         },
         "end": {
           "line": 6,
-          "column": 3
+          "column": 2
         }
       }
     }
@@ -873,9 +873,9 @@
   "tokens": [
     {
       "type": "CommentBlock",
-      "value": "*\r\n * @Project: FivemTools\r\n * @Author: Samuelds\r\n * @License: GNU General Public License v3.0\r\n * @Source: https://github.com/FivemTools/ft_core\r\n ",
+      "value": "\r\n * @Project: FiveM Tools\r\n * @Author: Samuelds\r\n * @License: GNU General Public License v3.0\r\n * @Source: https://github.com/FivemTools/ft_core\r\n",
       "start": 0,
-      "end": 152,
+      "end": 151,
       "loc": {
         "start": {
           "line": 1,
@@ -883,7 +883,7 @@
         },
         "end": {
           "line": 6,
-          "column": 3
+          "column": 2
         }
       }
     },
@@ -902,8 +902,8 @@
         "updateContext": null
       },
       "value": "const",
-      "start": 156,
-      "end": 161,
+      "start": 155,
+      "end": 160,
       "loc": {
         "start": {
           "line": 8,
@@ -928,8 +928,8 @@
         "binop": null
       },
       "value": "AudioFlag",
-      "start": 162,
-      "end": 171,
+      "start": 161,
+      "end": 170,
       "loc": {
         "start": {
           "line": 8,
@@ -955,8 +955,8 @@
         "updateContext": null
       },
       "value": "=",
-      "start": 172,
-      "end": 173,
+      "start": 171,
+      "end": 172,
       "loc": {
         "start": {
           "line": 8,
@@ -983,8 +983,8 @@
         "updateContext": null
       },
       "value": "new",
-      "start": 174,
-      "end": 177,
+      "start": 173,
+      "end": 176,
       "loc": {
         "start": {
           "line": 8,
@@ -1009,8 +1009,8 @@
         "binop": null
       },
       "value": "Enum",
-      "start": 178,
-      "end": 182,
+      "start": 177,
+      "end": 181,
       "loc": {
         "start": {
           "line": 8,
@@ -1034,8 +1034,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 182,
-      "end": 183,
+      "start": 181,
+      "end": 182,
       "loc": {
         "start": {
           "line": 8,
@@ -1060,8 +1060,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 183,
-      "end": 184,
+      "start": 182,
+      "end": 183,
       "loc": {
         "start": {
           "line": 8,
@@ -1087,8 +1087,8 @@
         "updateContext": null
       },
       "value": "ActivateSwitchWheelAudio",
-      "start": 190,
-      "end": 216,
+      "start": 189,
+      "end": 215,
       "loc": {
         "start": {
           "line": 9,
@@ -1113,8 +1113,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 216,
-      "end": 217,
+      "start": 215,
+      "end": 216,
       "loc": {
         "start": {
           "line": 9,
@@ -1140,8 +1140,8 @@
         "updateContext": null
       },
       "value": "AllowCutsceneOverScreenFade",
-      "start": 223,
-      "end": 252,
+      "start": 222,
+      "end": 251,
       "loc": {
         "start": {
           "line": 10,
@@ -1166,8 +1166,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 252,
-      "end": 253,
+      "start": 251,
+      "end": 252,
       "loc": {
         "start": {
           "line": 10,
@@ -1193,8 +1193,8 @@
         "updateContext": null
       },
       "value": "AllowForceRadioAfterRetune",
-      "start": 259,
-      "end": 287,
+      "start": 258,
+      "end": 286,
       "loc": {
         "start": {
           "line": 11,
@@ -1219,8 +1219,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 287,
-      "end": 288,
+      "start": 286,
+      "end": 287,
       "loc": {
         "start": {
           "line": 11,
@@ -1246,8 +1246,8 @@
         "updateContext": null
       },
       "value": "AllowPainAndAmbientSpeechToPlayDuringCutscene",
-      "start": 294,
-      "end": 341,
+      "start": 293,
+      "end": 340,
       "loc": {
         "start": {
           "line": 12,
@@ -1272,8 +1272,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 341,
-      "end": 342,
+      "start": 340,
+      "end": 341,
       "loc": {
         "start": {
           "line": 12,
@@ -1299,8 +1299,8 @@
         "updateContext": null
       },
       "value": "AllowPlayerAIOnMission",
-      "start": 348,
-      "end": 372,
+      "start": 347,
+      "end": 371,
       "loc": {
         "start": {
           "line": 13,
@@ -1325,8 +1325,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 372,
-      "end": 373,
+      "start": 371,
+      "end": 372,
       "loc": {
         "start": {
           "line": 13,
@@ -1352,8 +1352,8 @@
         "updateContext": null
       },
       "value": "AllowPoliceScannerWhenPlayerHasNoControl",
-      "start": 379,
-      "end": 421,
+      "start": 378,
+      "end": 420,
       "loc": {
         "start": {
           "line": 14,
@@ -1378,8 +1378,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 421,
-      "end": 422,
+      "start": 420,
+      "end": 421,
       "loc": {
         "start": {
           "line": 14,
@@ -1405,8 +1405,8 @@
         "updateContext": null
       },
       "value": "AllowRadioDuringSwitch",
-      "start": 428,
-      "end": 452,
+      "start": 427,
+      "end": 451,
       "loc": {
         "start": {
           "line": 15,
@@ -1431,8 +1431,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 452,
-      "end": 453,
+      "start": 451,
+      "end": 452,
       "loc": {
         "start": {
           "line": 15,
@@ -1458,8 +1458,8 @@
         "updateContext": null
       },
       "value": "AllowRadioOverScreenFade",
-      "start": 459,
-      "end": 485,
+      "start": 458,
+      "end": 484,
       "loc": {
         "start": {
           "line": 16,
@@ -1484,8 +1484,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 485,
-      "end": 486,
+      "start": 484,
+      "end": 485,
       "loc": {
         "start": {
           "line": 16,
@@ -1511,8 +1511,8 @@
         "updateContext": null
       },
       "value": "AllowScoreAndRadio",
-      "start": 492,
-      "end": 512,
+      "start": 491,
+      "end": 511,
       "loc": {
         "start": {
           "line": 17,
@@ -1537,8 +1537,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 512,
-      "end": 513,
+      "start": 511,
+      "end": 512,
       "loc": {
         "start": {
           "line": 17,
@@ -1564,8 +1564,8 @@
         "updateContext": null
       },
       "value": "AllowScriptedSpeechInSlowMo",
-      "start": 519,
-      "end": 548,
+      "start": 518,
+      "end": 547,
       "loc": {
         "start": {
           "line": 18,
@@ -1590,8 +1590,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 548,
-      "end": 549,
+      "start": 547,
+      "end": 548,
       "loc": {
         "start": {
           "line": 18,
@@ -1617,8 +1617,8 @@
         "updateContext": null
       },
       "value": "AvoidMissionCompleteDelay",
-      "start": 555,
-      "end": 582,
+      "start": 554,
+      "end": 581,
       "loc": {
         "start": {
           "line": 19,
@@ -1643,8 +1643,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 582,
-      "end": 583,
+      "start": 581,
+      "end": 582,
       "loc": {
         "start": {
           "line": 19,
@@ -1670,8 +1670,8 @@
         "updateContext": null
       },
       "value": "DisableAbortConversationForDeathAndInjury",
-      "start": 589,
-      "end": 632,
+      "start": 588,
+      "end": 631,
       "loc": {
         "start": {
           "line": 20,
@@ -1696,8 +1696,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 632,
-      "end": 633,
+      "start": 631,
+      "end": 632,
       "loc": {
         "start": {
           "line": 20,
@@ -1723,8 +1723,8 @@
         "updateContext": null
       },
       "value": "DisableAbortConversationForRagdoll",
-      "start": 639,
-      "end": 675,
+      "start": 638,
+      "end": 674,
       "loc": {
         "start": {
           "line": 21,
@@ -1749,8 +1749,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 675,
-      "end": 676,
+      "start": 674,
+      "end": 675,
       "loc": {
         "start": {
           "line": 21,
@@ -1776,8 +1776,8 @@
         "updateContext": null
       },
       "value": "DisableBarks",
-      "start": 682,
-      "end": 696,
+      "start": 681,
+      "end": 695,
       "loc": {
         "start": {
           "line": 22,
@@ -1802,8 +1802,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 696,
-      "end": 697,
+      "start": 695,
+      "end": 696,
       "loc": {
         "start": {
           "line": 22,
@@ -1829,8 +1829,8 @@
         "updateContext": null
       },
       "value": "DisableFlightMusic",
-      "start": 703,
-      "end": 723,
+      "start": 702,
+      "end": 722,
       "loc": {
         "start": {
           "line": 23,
@@ -1855,8 +1855,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 723,
-      "end": 724,
+      "start": 722,
+      "end": 723,
       "loc": {
         "start": {
           "line": 23,
@@ -1882,8 +1882,8 @@
         "updateContext": null
       },
       "value": "DisableReplayScriptStreamRecording",
-      "start": 730,
-      "end": 766,
+      "start": 729,
+      "end": 765,
       "loc": {
         "start": {
           "line": 24,
@@ -1908,8 +1908,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 766,
-      "end": 767,
+      "start": 765,
+      "end": 766,
       "loc": {
         "start": {
           "line": 24,
@@ -1935,8 +1935,8 @@
         "updateContext": null
       },
       "value": "EnableHeadsetBeep",
-      "start": 773,
-      "end": 792,
+      "start": 772,
+      "end": 791,
       "loc": {
         "start": {
           "line": 25,
@@ -1961,8 +1961,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 792,
-      "end": 793,
+      "start": 791,
+      "end": 792,
       "loc": {
         "start": {
           "line": 25,
@@ -1988,8 +1988,8 @@
         "updateContext": null
       },
       "value": "ForceConversationInterrupt",
-      "start": 799,
-      "end": 827,
+      "start": 798,
+      "end": 826,
       "loc": {
         "start": {
           "line": 26,
@@ -2014,8 +2014,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 827,
-      "end": 828,
+      "start": 826,
+      "end": 827,
       "loc": {
         "start": {
           "line": 26,
@@ -2041,8 +2041,8 @@
         "updateContext": null
       },
       "value": "ForceSeamlessRadioSwitch",
-      "start": 834,
-      "end": 860,
+      "start": 833,
+      "end": 859,
       "loc": {
         "start": {
           "line": 27,
@@ -2067,8 +2067,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 860,
-      "end": 861,
+      "start": 859,
+      "end": 860,
       "loc": {
         "start": {
           "line": 27,
@@ -2094,8 +2094,8 @@
         "updateContext": null
       },
       "value": "ForceSniperAudio",
-      "start": 867,
-      "end": 885,
+      "start": 866,
+      "end": 884,
       "loc": {
         "start": {
           "line": 28,
@@ -2120,8 +2120,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 885,
-      "end": 886,
+      "start": 884,
+      "end": 885,
       "loc": {
         "start": {
           "line": 28,
@@ -2147,8 +2147,8 @@
         "updateContext": null
       },
       "value": "FrontendRadioDisabled",
-      "start": 892,
-      "end": 915,
+      "start": 891,
+      "end": 914,
       "loc": {
         "start": {
           "line": 29,
@@ -2173,8 +2173,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 915,
-      "end": 916,
+      "start": 914,
+      "end": 915,
       "loc": {
         "start": {
           "line": 29,
@@ -2200,8 +2200,8 @@
         "updateContext": null
       },
       "value": "HoldMissionCompleteWhenPrepared",
-      "start": 922,
-      "end": 955,
+      "start": 921,
+      "end": 954,
       "loc": {
         "start": {
           "line": 30,
@@ -2226,8 +2226,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 955,
-      "end": 956,
+      "start": 954,
+      "end": 955,
       "loc": {
         "start": {
           "line": 30,
@@ -2253,8 +2253,8 @@
         "updateContext": null
       },
       "value": "IsDirectorModeActive",
-      "start": 962,
-      "end": 984,
+      "start": 961,
+      "end": 983,
       "loc": {
         "start": {
           "line": 31,
@@ -2279,8 +2279,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 984,
-      "end": 985,
+      "start": 983,
+      "end": 984,
       "loc": {
         "start": {
           "line": 31,
@@ -2306,8 +2306,8 @@
         "updateContext": null
       },
       "value": "IsPlayerOnMissionForSpeech",
-      "start": 991,
-      "end": 1019,
+      "start": 990,
+      "end": 1018,
       "loc": {
         "start": {
           "line": 32,
@@ -2332,8 +2332,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1019,
-      "end": 1020,
+      "start": 1018,
+      "end": 1019,
       "loc": {
         "start": {
           "line": 32,
@@ -2359,8 +2359,8 @@
         "updateContext": null
       },
       "value": "ListenerReverbDisabled",
-      "start": 1026,
-      "end": 1050,
+      "start": 1025,
+      "end": 1049,
       "loc": {
         "start": {
           "line": 33,
@@ -2385,8 +2385,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1050,
-      "end": 1051,
+      "start": 1049,
+      "end": 1050,
       "loc": {
         "start": {
           "line": 33,
@@ -2412,8 +2412,8 @@
         "updateContext": null
       },
       "value": "LoadMPData",
-      "start": 1057,
-      "end": 1069,
+      "start": 1056,
+      "end": 1068,
       "loc": {
         "start": {
           "line": 34,
@@ -2438,8 +2438,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1069,
-      "end": 1070,
+      "start": 1068,
+      "end": 1069,
       "loc": {
         "start": {
           "line": 34,
@@ -2465,8 +2465,8 @@
         "updateContext": null
       },
       "value": "MobileRadioInGame",
-      "start": 1076,
-      "end": 1095,
+      "start": 1075,
+      "end": 1094,
       "loc": {
         "start": {
           "line": 35,
@@ -2491,8 +2491,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1095,
-      "end": 1096,
+      "start": 1094,
+      "end": 1095,
       "loc": {
         "start": {
           "line": 35,
@@ -2518,8 +2518,8 @@
         "updateContext": null
       },
       "value": "OnlyAllowScriptTriggerPoliceScanner",
-      "start": 1102,
-      "end": 1139,
+      "start": 1101,
+      "end": 1138,
       "loc": {
         "start": {
           "line": 36,
@@ -2544,8 +2544,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1139,
-      "end": 1140,
+      "start": 1138,
+      "end": 1139,
       "loc": {
         "start": {
           "line": 36,
@@ -2571,8 +2571,8 @@
         "updateContext": null
       },
       "value": "PlayMenuMusic",
-      "start": 1146,
-      "end": 1161,
+      "start": 1145,
+      "end": 1160,
       "loc": {
         "start": {
           "line": 37,
@@ -2597,8 +2597,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1161,
-      "end": 1162,
+      "start": 1160,
+      "end": 1161,
       "loc": {
         "start": {
           "line": 37,
@@ -2624,8 +2624,8 @@
         "updateContext": null
       },
       "value": "PoliceScannerDisabled",
-      "start": 1168,
-      "end": 1191,
+      "start": 1167,
+      "end": 1190,
       "loc": {
         "start": {
           "line": 38,
@@ -2650,8 +2650,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1191,
-      "end": 1192,
+      "start": 1190,
+      "end": 1191,
       "loc": {
         "start": {
           "line": 38,
@@ -2677,8 +2677,8 @@
         "updateContext": null
       },
       "value": "ScriptedConvListenerMaySpeak",
-      "start": 1198,
-      "end": 1228,
+      "start": 1197,
+      "end": 1227,
       "loc": {
         "start": {
           "line": 39,
@@ -2703,8 +2703,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1228,
-      "end": 1229,
+      "start": 1227,
+      "end": 1228,
       "loc": {
         "start": {
           "line": 39,
@@ -2730,8 +2730,8 @@
         "updateContext": null
       },
       "value": "SpeechDucksScore",
-      "start": 1235,
-      "end": 1253,
+      "start": 1234,
+      "end": 1252,
       "loc": {
         "start": {
           "line": 40,
@@ -2756,8 +2756,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1253,
-      "end": 1254,
+      "start": 1252,
+      "end": 1253,
       "loc": {
         "start": {
           "line": 40,
@@ -2783,8 +2783,8 @@
         "updateContext": null
       },
       "value": "SuppressPlayerScubaBreathing",
-      "start": 1260,
-      "end": 1290,
+      "start": 1259,
+      "end": 1289,
       "loc": {
         "start": {
           "line": 41,
@@ -2809,8 +2809,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1290,
-      "end": 1291,
+      "start": 1289,
+      "end": 1290,
       "loc": {
         "start": {
           "line": 41,
@@ -2836,8 +2836,8 @@
         "updateContext": null
       },
       "value": "WantedMusicDisabled",
-      "start": 1297,
-      "end": 1318,
+      "start": 1296,
+      "end": 1317,
       "loc": {
         "start": {
           "line": 42,
@@ -2862,8 +2862,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1318,
-      "end": 1319,
+      "start": 1317,
+      "end": 1318,
       "loc": {
         "start": {
           "line": 42,
@@ -2889,8 +2889,8 @@
         "updateContext": null
       },
       "value": "WantedMusicOnMission",
-      "start": 1325,
-      "end": 1347,
+      "start": 1324,
+      "end": 1346,
       "loc": {
         "start": {
           "line": 43,
@@ -2915,8 +2915,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1347,
-      "end": 1348,
+      "start": 1346,
+      "end": 1347,
       "loc": {
         "start": {
           "line": 43,
@@ -2941,8 +2941,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1350,
-      "end": 1351,
+      "start": 1349,
+      "end": 1350,
       "loc": {
         "start": {
           "line": 44,
@@ -2966,8 +2966,8 @@
         "postfix": false,
         "binop": null
       },
-      "start": 1351,
-      "end": 1352,
+      "start": 1350,
+      "end": 1351,
       "loc": {
         "start": {
           "line": 44,
@@ -2992,8 +2992,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1352,
-      "end": 1353,
+      "start": 1351,
+      "end": 1352,
       "loc": {
         "start": {
           "line": 44,
@@ -3018,8 +3018,8 @@
         "binop": null,
         "updateContext": null
       },
-      "start": 1353,
-      "end": 1353,
+      "start": 1352,
+      "end": 1352,
       "loc": {
         "start": {
           "line": 44,

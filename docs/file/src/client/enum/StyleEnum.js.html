@@ -2,8 +2,8 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <base data-ice="baseUrl">
-  <title data-ice="title">Home | @fivemtools/ft_core</title>
+  <base data-ice="baseUrl" href="../../../../">
+  <title data-ice="title">src/client/enum/StyleEnum.js | @fivemtools/ft_core</title>
   <link type="text/css" rel="stylesheet" href="css/style.css">
   <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
   <script src="script/prettify/prettify.js"></script>
@@ -65,24 +65,73 @@
 </div>
 </nav>
 
-<div class="content" data-ice="content"><div data-ice="index" class="github-markdown"><h1 id="ft-core">ft_core</h1><p>To create resources on FiveM</p>
-<h3 id="prerequisites">Prerequisites</h3><ul>
-<li><a href="https://nodejs.org/">Nodejs</a></li>
-</ul>
-<h3 id="installing">Installing</h3><p>Copy <code>exemple</code> directory and rename to <code>ft_exemple</code>.</p>
-<p>Last add, into the server.cfg file :</p>
-<pre><code><code class="source-code prettyprint">    start ft_exemple</code>
-</code></pre><h3 id="documentation">Documentation</h3><ul>
-<li>Online : <a href="https://ft_core.fivem.tools">https://ft_core.fivem.tools</a></li>
-<li>Local : <code>docs</code> directory (github)</li>
-</ul>
-<h2 id="license">License</h2><p>This project is licensed under the GNU General Public License v3.0 - see the <a href="LICENSE">LICENSE</a> file for details</p>
-<h2 id="contributors--">Contributors :</h2><ul>
-<li>Samuelds</li>
-<li>THEJean-Kevin</li>
-<li>LH-Lawliet</li>
-</ul>
-</div>
+<div class="content" data-ice="content"><h1 data-ice="title">src/client/enum/StyleEnum.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">const PedComponents = new Enum([
+    &quot;Face&quot;,
+    &quot;Head&quot;,
+    &quot;Hair&quot;,
+    &quot;Torso&quot;,
+    &quot;Legs&quot;,
+    &quot;Hands&quot;,
+    &quot;Shoes&quot;,
+    &quot;Special1&quot;,
+    &quot;Special2&quot;,
+    &quot;Special3&quot;,
+    &quot;Textures&quot;,
+    &quot;Torso2&quot;
+]);
+
+const PedProps = new Enum([
+    &quot;Hats&quot;,
+    &quot;Glasses&quot;,
+    &quot;EarPieces&quot;,
+    &quot;Unknown3&quot;,
+    &quot;Unknown4&quot;,
+    &quot;Unknown5&quot;,
+    &quot;Watches&quot;,
+    &quot;Wristbands&quot;,
+    &quot;Unknown8&quot;,
+    &quot;Unknown9&quot;,
+]);
+
+const FaceEnum = new Enum([
+    &quot;Nose_Width&quot;,
+    &quot;Nose_Peak_Hight&quot;,
+    &quot;Nose_Peak_Lenght&quot;,
+    &quot;Nose_Bone_High&quot;,
+    &quot;Nose_Peak_Lowering&quot;,
+    &quot;Nose_Bone_Twist&quot;,
+    &quot;EyeBrown_High&quot;,
+    &quot;EyeBrown_Forward&quot;,
+    &quot;Cheeks_Bone_High&quot;,
+    &quot;Cheeks_Bone_Width&quot;,
+    &quot;Cheeks_Width&quot;,
+    &quot;Eyes_Openning&quot;,
+    &quot;Lips_Thickness&quot;,
+    &quot;Jaw_Bone_Width&quot;,
+    &quot;Jaw_Bone_Back_Lenght &quot;,
+    &quot;Chimp_Bone_Lowering &quot;,
+    &quot;Chimp_Bone_Lenght &quot;,
+    &quot;Chimp_Bone_Width&quot;,
+    &quot;Chimp_Hole&quot;,
+    &quot;Neck_Thikness&quot;]);
+
+const HeadAppearanceEnum = new Enum([
+    &quot;Blemishes&quot;,
+    &quot;Beard&quot;,
+    &quot;Eyebrows&quot;,
+    &quot;Skin_Ageing&quot;,
+    &quot;Makeup&quot;,
+    &quot;Blush&quot;,
+    &quot;Skin_Complexion&quot;,
+    &quot;Skin_SunDamage&quot;,
+    &quot;Lipstick&quot;,
+    &quot;Moles_Freckles&quot;,
+    &quot;Chest_Hair&quot;,
+    &quot;Body_Blemishes&quot;,
+    &quot;Add_Body_Blemish&quot;
+])</code></pre>
+
 </div>
 
 <footer class="footer">
